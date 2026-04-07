@@ -1,0 +1,79 @@
+import { useState } from 'react';
+import { useOneOnOneRoom } from "../../src.a.chats/ws.chats";
+import { useLocation } from "react-router-dom";
+import { Menu } from '../tsx.items/items.menu/menu';
+
+import { useNavigate } from 'react-router-dom';
+
+const LobbyPageContent = () => {
+    const navigate = useNavigate();
+    const location = useLocation();
+    const peerWsId = location.state?.peerWsId || "";
+    const { messages, isPeerOnline, sendMessage, removeMessage, updateMessage } = useOneOnOneRoom({ peerWsId });
+    const [defEdit, setEdit] = useState(false);
+    const [text, setText] = useState("");
+
+    const switchEdit = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        setEdit(prev => !prev);
+    };
+
+    const handleSubmit = () => {
+        if (!text.trim()) return;
+        sendMessage({ messageStatus: "mine", messageId: "", content: text });
+        setText("");
+    };
+
+    return (
+        <>
+            <div className="login-page">
+                <div className="login-page__title">Author's Journey</div>
+                <ul className="menu-content__item--list">
+                    <li className="login-page__item--list-item">
+                        <div className="login-page__item--list-item__heading">HI!  i am nazar rozhalovsky</div>
+                        <div className="login-page__item--list-item__title">Fullstack web  developer with 2+ years of experience with REACT AND NODE.JS (NEST.JS)</div>
+                        <div className="login-page__item--list-item__title"></div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                        <div className="login-page__item--list-item__heading">before</div>
+                        <div className="login-page__item--list-item__title">My journey began at various it courses, where I discovered it through design and web projects. I learned the fundamentals of developing mockups, building small sites and web architecture.</div>
+                        <div className="login-page__item--list-item__title"></div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                        <div className="login-page__item--list-item__heading">the aMessage</div>
+                        <div className="login-page__item--list-item__title">A WebSocket-based messenger with end-to-end encryption from Libsodium.   Allows you to chat securely.   used google and github Authentication </div>
+                        <div className="login-page__item--list-item__title"></div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                        <div className="login-page__item--list-item__heading">the Anote</div>
+                        <div className="login-page__item--list-item__title">the first author’s project.   notes web application with crud based on react and nest.js. used google and github Authentication</div>
+                        <div className="login-page__item--list-item__title"></div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                        <div className="login-page__item--list-item__heading">JS Development - SoftServe Academy</div>
+                        <div className="login-page__item--list-item__title">i Completed an intensive html (css) and JavaScript program at SoftServe Academy.   i have been started my personal experience with React, Node.js and databases. participated in softserve team projects and developed apps.</div>
+                        <div className="login-page__item--list-item__title"></div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                        <div className="login-page__item--list-item__heading">experiencing with devops AND databases - SoftServe Academy</div>
+                        <div className="login-page__item--list-item__title">Fullstack web  developer with 2+ years of experience with REACT AND NODE.JS (NEST.JS)</div>
+                        <div className="login-page__item--list-item__title"></div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                        <div className="login-page__item--list-item__heading">react sertification - SoftServe Academy</div>
+                        <div className="login-page__item--list-item__title">Having gained solid development experience from previous courses, I continued working on certifications at SoftServe.  In the summer of 2025, I received a softserve certificate of react developer</div>
+                        <div className="login-page__item--list-item__title"></div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                        <div className="login-page__item--list-item__heading">keep moving!</div>
+                        <div className="login-page__item--list-item__title">I continue to thoroughly explore and use new practices in web development. I am always ready to implement the latest and most innovative solutions.</div>
+                        <div className="login-page__item--list-item__title"></div>
+                    </li>
+                </ul>
+                <Menu />
+            </div>
+        </>
+    );
+};
+
+export default LobbyPageContent;
