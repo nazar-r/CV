@@ -23,7 +23,7 @@
     box-sizing: border-box;
     left: 15vw;
     animation: fadeIn 0.2s ease forwards;
-    z-index: 2147483646;
+    z-index: 2147483645;
 }
 
 .menu-button:hover,
