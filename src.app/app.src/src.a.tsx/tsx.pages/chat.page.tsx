@@ -64,7 +64,7 @@ const LobbyPageContent = () => {
                     <li className="login-page__item--list-item">
                         <div>
                             <div className="login-page__item--list-item__heading">Node.js Development - personal experience</div>
-                            <div className="login-page__item--list-item__title">Development of my personal notes app based on React and Nest.js has begun</div>
+                            <div className="login-page__item--list-item__title">in 2024 Development of my personal notes app based on React and Nest.js has begun</div>
                         </div>
                     </li>
                     <li className="login-page__item--list-item">
