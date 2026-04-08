@@ -397,7 +397,7 @@
     }
 
 
-    @media(min-width: 1450px) {
+    @media(min-width: 1500px) {
         .login-page__button-container {
             display: flex;
             flex-direction: row;
@@ -407,6 +407,6 @@
         .login-page__title {
             font-size: 53px;
             text-shadow: var(--text-shadow-welcome-page__heading);
-            margin: 40vh 0 0 0;
+            margin: 42vh 0 0 0;
         }
     }
