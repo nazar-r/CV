@@ -14,6 +14,7 @@ const AnotePage = lazy(() => import('./tsx.pages/anote.tsx'));
 const AmessagePage = lazy(() => import('./tsx.pages/amessage.tsx'));
 const ContactsPage = lazy(() => import('./tsx.pages/contacts.tsx'));
 const ChoosingUserPage = lazy(() => import('./tsx.pages/choosing.user.page.tsx'));
+const CertificationsPage = lazy(() => import('./tsx.pages/certifications.tsx'));
 
 const withSuspense = (component: ReactElement) => (
   <Suspense>{component}</Suspense>
@@ -31,6 +32,7 @@ const contentRoutes: RouteObject[] = [
       { path: 'anote', element: withSuspense(<AnotePage />) },
       { path: 'about', element: (withSuspense(<ChatPage />)) },
       { path: 'contacts', element: (withSuspense(<ContactsPage />)) },
+      { path: 'certifications', element: (withSuspense(<CertificationsPage />)) },
     ],
   },
 ];
