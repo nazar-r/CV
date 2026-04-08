@@ -27,7 +27,7 @@ const LobbyPageContent = () => {
     return (
         <>
             <div className="login-page">
-                <div className="login-page__title">Author's Journey</div>
+                <div className="login-page__title">My Journey</div>
                 <ul className="menu-content__item--list">
                     <li className="login-page__item--list-item">
                         <div>

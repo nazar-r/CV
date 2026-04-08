@@ -182,9 +182,9 @@
 
     .login-page__item--list-item__title--child {
         position: fixed;
-        top: 40px;
-        width: 700px;
+        width: 300px;
         color: rgb(255, 213, 25);
+        animation: fadeIn 0.2s ease forwards;
     }
 
     .login-page__button-hidden {
@@ -209,8 +209,9 @@
 
     }
 
-    .login-page__item--list-item__title-1:not(:hover) .login-page__item--list-item__title--child {
+    .login-page__item--list-item__title-2:not(:hover) .login-page__item--list-item__title--child {
         opacity: 0;
+        display: none;
         pointer-events: none;
     }
 
@@ -297,6 +298,21 @@
     }
 
     @media(min-width: 1250px) {
+        .login-page__item--list-item {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            scroll-snap-align: start;
+        }
+
+
+        .login-page__item--list-item__title--child {
+            position: fixed;
+            width: 750px;
+            color: rgb(255, 213, 25);
+            animation: fadeIn 0.2s ease forwards;
+        }
+
         .login-page__button-container {
             display: flex;
             flex-direction: row;
@@ -366,7 +382,7 @@
         }
 
         .login-page__title {
-            font-size: 55px;
+            font-size: 53px;
             text-shadow: var(--text-shadow-welcome-page__heading);
             margin: 40vh 0 0 0;
         }

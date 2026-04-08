@@ -33,9 +33,10 @@ const LobbyPageContent = () => {
                         <div>
                             <div className="login-page__item--list-item__heading">A WebSocket-based messenger with end-to-end encryption from Libsodium</div>
                             <div className="login-page__item--list-item__title--container">
-                                <a href="https://amessage.site" className="login-page__item--list-item__title-1">link
+                                <div className="login-page__item--list-item__title-2">
+                                    <a href="https://amessage.site" className="login-page__item--list-item__title-1"> link </a>
                                     <div className="login-page__item--list-item__title--child">NOTE: The first launch may take up to 50 seconds for the server to start.</div>
-                                </a>
+                                </div>
                                 <a href="https://github.com/nazar-r/aMessage" className="login-page__item--list-item__title-1">look on gihtub</a>
                             </div>
                         </div>
