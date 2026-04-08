@@ -82,7 +82,7 @@ input:-webkit-autofill {
 
 
 .main-container {
- background: linear-gradient(121.15deg, #00000000 -29.02%, #7230c780 107.31%), #131313;
+ background: linear-gradient(121.15deg, #00000000 20.02%, #7230c780 100%), #131313;
     padding: 0 12vw 0 12vw;
     width: 100vw;
     height: 100vh;
@@ -92,7 +92,7 @@ input:-webkit-autofill {
 @media(min-width: 650px) {
     .main-container {
         padding: 0 16vw 0 16vw;
-        background: linear-gradient(121.15deg, #00000000 -29.02%, #7230c780 107.31%), #131313;
+         background: linear-gradient(121.15deg, #00000000 12.02%, #7230c780 100%), #131313;
     }
 }
 
@@ -105,7 +105,7 @@ input:-webkit-autofill {
 @media(min-width: 1250px) {
     .main-container {
         padding: 0 25vw 0 25vw;
-        background: linear-gradient(121.15deg, #00000000 -29.02%, #7230c780 107.31%), #131313;
+        background: linear-gradient(121.15deg, #00000000 -20.02%, #7230c780 100.31%), #131313;
     }
 }
 
