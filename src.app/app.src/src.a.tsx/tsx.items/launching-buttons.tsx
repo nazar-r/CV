@@ -47,10 +47,10 @@ export const RenderingButtons = () => {
           </svg>
         </div>
         <div className='login-page__button-hidden'>
-          <a href='/public/Certificate-htmlcss.pdf' download="rozhalovsky/html/css.pdf" className='login-page__button-hidden--item'>html/css</a>
-          <a href='/public/Certificate-JS.pdf' download="rozhalovsky/js.pdf" className='login-page__button-hidden--item'>JS</a>
-          <a href='/public/Certificate-React.pdf' download="rozhalovsky/react.pdf" className='login-page__button-hidden--item'>react</a>
-          <a href='/public/devops.pdf' download="rozhalovsky/devops.pdf" className='login-page__button-hidden--item'>devops</a>
+          <a href='/Certificate-htmlcss.pdf' download="rozhalovsky/html/css.pdf" className='login-page__button-hidden--item'>html/css</a>
+          <a href='/Certificate-JS.pdf' download="rozhalovsky/js.pdf" className='login-page__button-hidden--item'>JS</a>
+          <a href='/Certificate-React.pdf' download="rozhalovsky/react.pdf" className='login-page__button-hidden--item'>react</a>
+          <a href='/devops.pdf' download="rozhalovsky/devops.pdf" className='login-page__button-hidden--item'>devops</a>
         </div>
       </div>
 
