@@ -27,7 +27,7 @@ const LobbyPageContent = () => {
     return (
         <>
             <div className="login-page">
-                <div className="login-page__title">got interested?</div>
+                <div className="login-page__title">interested?</div>
                 <div className="login-page__title__heading">contact me and i wIll answer you soon</div>
                 <ul className="menu-content__item--list">
                     <li className="login-page__item--list-item-1">
