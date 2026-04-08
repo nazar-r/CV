@@ -10,6 +10,9 @@ const Layout = lazy(() => import('./tsx.items/layout.tsx'));
 const LoginPage = lazy(() => import('./tsx.pages/login.page.tsx'));
 const WelcomePage = lazy(() => import('./tsx.pages/welcome.page.tsx'));
 const ChatPage = lazy(() => import('./tsx.pages/chat.page.tsx'));
+const AnotePage = lazy(() => import('./tsx.pages/anote.tsx'));
+const AmessagePage = lazy(() => import('./tsx.pages/amessage.tsx'));
+const ContactsPage = lazy(() => import('./tsx.pages/contacts.tsx'));
 const ChoosingUserPage = lazy(() => import('./tsx.pages/choosing.user.page.tsx'));
 
 const withSuspense = (component: ReactElement) => (
@@ -24,8 +27,10 @@ const contentRoutes: RouteObject[] = [
       { path: 'welcome', element: withSuspense(<WelcomePage />) },
       { path: 'lobby', element: withSuspense(<LoginPage />) },
       { path: 'projects', element: withSuspense(<LoginPage />) },
+      { path: 'amessage', element: withSuspense(<AmessagePage />) },
+      { path: 'anote', element: withSuspense(<AnotePage />) },
       { path: 'about', element: (withSuspense(<ChatPage />)) },
-      { path: 'contacts', element: (withSuspense(<ChoosingUserPage />)) },
+      { path: 'contacts', element: (withSuspense(<ContactsPage />)) },
     ],
   },
 ];

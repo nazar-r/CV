@@ -13,6 +13,12 @@
         margin: 85px 0 0 0;
     }
 
+    .login-page__item--list-item__title--container {
+        display: flex;
+        flex-direction: row;
+
+    }
+
     .login-page__button--icon {
         margin: 0 0 0 9px;
         width: 23px;
@@ -53,6 +59,15 @@
         font-size: 14px;
         margin: 20px 0 0 0;
         opacity: 80%;
+    }
+
+    .login-page__item--list-item__title-1 {
+        font-size: 14px;
+        margin: 20px 50px 0 0;
+        text-decoration: none;
+        color: #ffffff;
+        opacity: 80%;
+        cursor: pointer;
     }
 
     .login-page__item--list-item__heading {
@@ -118,6 +133,28 @@
         color: #ffffff;
     }
 
+    .login-page__item--list-item__title--child {
+        position: fixed;
+        top: 40px;
+        width: 700px;
+        color: rgb(255, 213, 25);
+    }
+
+    .login-page__item--list-item__title-1 {}
+
+    .login-page__item--list-item__title-2 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .login-page__item--list-item__title-1:not(:hover) .login-page__item--list-item__title--child {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+
+
     .login-page__button--title:hover {
         display: flex;
         flex-direction: row;
@@ -146,7 +183,12 @@
             background: #000000;
             box-shadow: 5px 5px 50px #00000065;
             font-size: 16px;
-            opacity: 80%;
+            opacity: 100%;
+        }
+
+        .login-page__item--list-item__title-1:hover {
+            opacity: 100%;
+            transform: var(--transform-welcome-page__button--item);
         }
 
         .login-page__title {
@@ -179,7 +221,7 @@
             height: 120px;
             font-size: 16px;
             transform: var(--transform-welcome-page__button--item);
-            opacity: 80%;
+            opacity: 100%;
             box-shadow: 7px 7px 50px #00000073;
             cursor: pointer;
             transition: 0.35s;
@@ -220,7 +262,7 @@
             height: 180px;
             font-size: 16px;
             transform: var(--transform-welcome-page__button--item);
-            opacity: 80%;
+            opacity: 100%;
             box-shadow: 7px 7px 50px #00000073;
             cursor: pointer;
             transition: 0.35s;

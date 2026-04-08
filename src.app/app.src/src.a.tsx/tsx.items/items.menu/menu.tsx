@@ -30,8 +30,8 @@ export const Menu = () => {
 
     const menuItems = (
         <>
+            <div className={`menu-container__item ${isMobile && defMenuItems ? "chat-message--fade" : ""}`} style={{ transitionDelay: isMobile && defMenuItems ? "0.2s" : "0s" }} onClick={() => navigate("/about")}>About Me</div>
             <div className={`menu-container__item ${isMobile && defMenuItems ? "chat-message--fade" : ""}`} style={{ transitionDelay: isMobile && defMenuItems ? "0.2s" : "0s" }} onClick={() => navigate("/projects")}>Projects</div>
-            <div className={`menu-container__item ${isMobile && defMenuItems ? "chat-message--fade" : ""}`} style={{ transitionDelay: isMobile && defMenuItems ? "0.2s" : "0s" }} onClick={() => navigate("/about")}>About</div>
             <div className={`menu-container__item ${isMobile && defMenuItems ? "chat-message--fade" : ""}`} style={{ transitionDelay: isMobile && defMenuItems ? "0.2s" : "0s" }} onClick={() => navigate("/contacts")}>Contacts</div>
         </>
     );
