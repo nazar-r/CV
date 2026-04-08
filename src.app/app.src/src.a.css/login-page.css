@@ -10,7 +10,7 @@
     .login-page__button-container {
         display: flex;
         flex-direction: column;
-        margin: 85px 0 0 0;
+        margin: 58px 0 0 0;
     }
 
     .login-page__item--list-item__title--container {
@@ -230,9 +230,9 @@
         }
 
         .login-page__button-container {
-            /* display: flex;
+            display: flex;
             flex-direction: column;
-            margin: 85px 0 0 0; */
+            margin: 85px 0 0 0;
         }
 
         .login-page__button {

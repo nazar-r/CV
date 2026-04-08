@@ -157,3 +157,31 @@
         gap: 10vw;
     }
 }
+@media (min-width: 1450px) {
+    .menu-content__item--list {
+        scroll-behavior: smooth;
+        border-left: 2px solid #fff;
+        margin: 50px 0 0 0;
+        padding: 120px 0 0 50px;
+        height: 200px;
+        list-style: none;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+
+    .menu {
+        padding: 0 15vw 0 25vw;
+    }
+
+    .menu-content__item--title {
+        margin: 0 0 25px 0;
+        font-size: 35px;
+    }
+
+    .menu-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10vw;
+    }
+}
