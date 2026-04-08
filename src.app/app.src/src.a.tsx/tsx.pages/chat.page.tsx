@@ -45,13 +45,13 @@ const LobbyPageContent = () => {
                     <li className="login-page__item--list-item">
                         <div>
                             <div className="login-page__item--list-item__heading">My apps - the aMessage</div>
-                            <div className="login-page__item--list-item__title">A WebSocket-based messenger with end-to-end encryption from Libsodium.Allows you to chat securely.used google and github Authentication</div>
+                            <div className="login-page__item--list-item__title">Designed in 2026. A WebSocket-based messenger with end-to-end encryption from Libsodium.Allows you to chat securely.used google and github Authentication</div>
                         </div>
                     </li>
                     <li className="login-page__item--list-item">
                         <div>
                             <div className="login-page__item--list-item__heading">My apps - the Anote</div>
-                            <div className="login-page__item--list-item__title">the first author's project. notes web application with crud based on react and nest.js. used google and github Authentication</div>
+                            <div className="login-page__item--list-item__title">Designed in 2024. the first author's project. notes web application with crud based on react and nest.js. used google and github Authentication</div>
                         </div>
                     </li>
                     <li className="login-page__item--list-item">
