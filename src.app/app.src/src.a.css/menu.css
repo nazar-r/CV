@@ -8,8 +8,8 @@
     flex-direction: column;
     justify-content: flex-end;
     box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
     padding: 0 12vw;
     animation: fadeIn 0.2s ease forwards;
     color: #fff;

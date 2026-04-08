@@ -131,7 +131,6 @@
             font-size: 27px
         }
 
-
         .login-page__button-container {
             display: flex;
             flex-direction: row;
@@ -151,7 +150,7 @@
         }
 
         .login-page__title {
-            font-size: 50px;
+            font-size: 40px;
             text-shadow: var(--text-shadow-welcome-page__heading);
             margin: 40vh 0 0 0;
         }
@@ -167,6 +166,12 @@
         .login-page__button:not(:hover) .login-page__button-hidden {
             opacity: 0;
             pointer-events: none;
+        }
+
+        .login-page__title {
+            font-size: 50px;
+            text-shadow: var(--text-shadow-welcome-page__heading);
+            margin: 40vh 0 0 0;
         }
 
         .login-page__button:hover {
@@ -189,7 +194,7 @@
         }
 
         .login-page__title {
-            font-size: var(--font-size-xxl);
+            font-size: 50px;
             text-shadow: var(--text-shadow-welcome-page__heading);
             margin: 40vh 0 0 0;
         }
@@ -219,5 +224,20 @@
             box-shadow: 7px 7px 50px #00000073;
             cursor: pointer;
             transition: 0.35s;
+        }
+    }
+
+
+    @media(min-width: 1450px) {
+        .login-page__button-container {
+            display: flex;
+            flex-direction: row;
+            margin: 60px 0 0 0;
+        }
+
+        .login-page__title {
+            font-size: 55px;
+            text-shadow: var(--text-shadow-welcome-page__heading);
+            margin: 40vh 0 0 0;
         }
     }

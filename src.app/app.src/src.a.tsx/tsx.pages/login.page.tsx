@@ -5,7 +5,7 @@ const LoginPageContent = () => (
     <div className="login-page">
         <div className="login-page__title">Explore the projects!</div>
         <RenderingButtons />
-             <Menu />
+        <Menu />
     </div>
 );
 
