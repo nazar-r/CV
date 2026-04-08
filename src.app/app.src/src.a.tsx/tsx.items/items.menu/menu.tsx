@@ -39,9 +39,9 @@ export const Menu = () => {
     return (
         <>{defMenu && <div className="menu"><div className="menu-content">{menuContent}</div></div>}
             <div className="menu-container" style={{ bottom: defMenu ? (isMobile ? "23vh" : "15vh") : "7vh" }}>
-                {!isMobile ? <div className="menu-button" onClick={switchMenu} style={{ fontSize: defMenu ? 18 : 19 }}>Explore CV</div> : null}
+                {!isMobile ? <div className="menu-button" onClick={switchMenu} style={{ fontSize: defMenu ? 18 : 19 }}>Menu</div> : null}
                 {defMenu && (isMobile ? (!defMenuItems ? menuItems : null) : menuItems)}
-                {isMobile ? <div className="menu-button" onClick={closeOrSwitchMenu} style={{ fontSize: defMenu ? 18 : 19 }}>Explore CV</div> : null}
+                {isMobile ? <div className="menu-button" onClick={closeOrSwitchMenu} style={{ fontSize: defMenu ? 18 : 19 }}>Menu</div> : null}
             </div> </>
     );
 }
