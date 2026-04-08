@@ -69,7 +69,7 @@ const LobbyPageContent = () => {
                     <li className="login-page__item--list-item">
                                          <div className="login-page__item--list-item__heading-main"></div>
                         <div className="login-page__item--list-item__heading">react sertification - SoftServe Academy</div>
-                        <div className="login-page__item--list-item__title">Having gained solid development experience from previous courses, I continued working on certifications at SoftServe.  In the summer of 2025, I received a softserve certificate of react developer</div>
+                        <div className="login-page__item--list-item__title">Having gained solid development experience, I continued working on certifications at SoftServe.  In the summer of 2025, I received a softserve certificate of react developer</div>
                         <div className="login-page__item--list-item__title"></div>
                     </li>
                     <li className="login-page__item--list-item">          
