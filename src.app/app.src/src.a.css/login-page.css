@@ -148,11 +148,10 @@
 
     }
 
-    .login-page__item--list-item__title-1:not(:hover) .login-page__item--list-item__title--child {
+    .login-page__item--list-item:not(:hover) .login-page__item--list-item__title--child {
         opacity: 0;
         pointer-events: none;
     }
-
 
 
     .login-page__button--title:hover {

@@ -30,14 +30,13 @@ const LobbyPageContent = () => {
                 <div className="login-page__title">got interested?</div>
                 <div className="login-page__title__heading">contact me and i wIll answer you soon</div>
                 <ul className="menu-content__item--list">
-                    <li className="login-page__item--list-item">
-                        <form id="contact-form" action="https://forminit.com/f/dmq045juc0x" method="POST" className="login-page__item--list-item__field">
+                    <li className="login-page__item--list-item-1">
+                        <form id="contact-form" action="https://forminit.com/f/dmq045juc0x" method="POST" className="login-page__item--list-item__field--container">
                             <input type="text" name="fi-sender-fullName" placeholder="your name" className="login-page__item--list-item__title--field" required />
                             <input type="email" name="fi-sender-email" placeholder="your email" className="login-page__item--list-item__title--field" required />
                             <textarea name="fi-text-message" placeholder="your message" className="login-page__item--list-item__title--field" required></textarea>
                         </form>
                         <button type="submit" form="contact-form" className="login-page__item--list-item__title--button">
-
                             <div>Send</div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="login-page__button--icon-1">
                                 <line x1="5" y1="12" x2="19" y2="12" />
@@ -48,12 +47,12 @@ const LobbyPageContent = () => {
                     <li className="login-page__item--list-item">
                         <div>
                             <div className="login-page__item--list-item__heading">My Socials</div>
-                                    <div className="login-page__item--list-item__title-2">
-                            <a href="https://github.com/nazar-r/aNote" className="login-page__item--list-item__title-1">Telegram</a>
-                            <a href="https://github.com/nazar-r/aNote" className="login-page__item--list-item__title-1">Github</a>
+                            <div className="login-page__item--list-item__title-2">
+                                <a href="https://t.me/nazar_rr" className="login-page__item--list-item__title-1">Telegram</a>
+                                <a href="https://github.com/nazar-r/aNote" className="login-page__item--list-item__title-1">Github</a>
+                            </div>
                         </div>
-                        </div>
-                    </li>         
+                    </li>
                 </ul >
                 <Menu />
             </div >
