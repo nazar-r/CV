@@ -40,40 +40,48 @@ const LobbyPageContent = () => {
                         <div className="login-page__item--list-item__title"></div>
                     </li>
                     <li className="login-page__item--list-item">
-                        <div className="login-page__item--list-item__heading">the aMessage</div>
-                        <div className="login-page__item--list-item__title">A WebSocket-based messenger with end-to-end encryption from Libsodium.   Allows you to chat securely.   used google and github Authentication </div>
+                        <div className="login-page__item--list-item__heading">My apps - the aMessage</div>
+                        <div className="login-page__item--list-item__title">A WebSocket-based messenger with end-to-end encryption from Libsodium.Allows you to chat securely.used google and github Authentication</div>
                         <div className="login-page__item--list-item__title"></div>
                     </li>
                     <li className="login-page__item--list-item">
-                        <div className="login-page__item--list-item__heading">the Anote</div>
-                        <div className="login-page__item--list-item__title">the first author’s project.   notes web application with crud based on react and nest.js. used google and github Authentication</div>
+                        <div className="login-page__item--list-item__heading">My apps - the Anote</div>
+                        <div className="login-page__item--list-item__title">the first author’s project. notes web application with crud based on react and nest.js. used google and github Authentication</div>
+                            <div className="login-page__item--list-item__title"></div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                                      <div className="login-page__item--list-item__heading-main"></div>
+             <div className="login-page__item--list-item__heading">JS Development - SoftServe Academy</div>
+                        <div className="login-page__item--list-item__title">In 2024 i Completed an intensive html (css) and JavaScript program at SoftServe Academy. participated in softserve team projects and developed apps.</div>
                         <div className="login-page__item--list-item__title"></div>
                     </li>
                     <li className="login-page__item--list-item">
-                        <div className="login-page__item--list-item__heading">JS Development - SoftServe Academy</div>
-                        <div className="login-page__item--list-item__title">i Completed an intensive html (css) and JavaScript program at SoftServe Academy.   i have been started my personal experience with React, Node.js and databases. participated in softserve team projects and developed apps.</div>
+                                      <div className="login-page__item--list-item__heading-main"></div>  
+             <div className="login-page__item--list-item__heading">Node.js Development - personal experience</div>
+                        <div className="login-page__item--list-item__title">Development of my personal notes app based on React and Nest.js has begun</div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                        <div className="login-page__item--list-item__heading-main"></div>
+                        <div className="login-page__item--list-item__heading">devops AND databases - SoftServe Academy</div>
+                        <div className="login-page__item--list-item__title">In 2024-2025 I completed a six-month team-based courses in DevOps and databases. I continued working on designs and personal projects.</div>
                         <div className="login-page__item--list-item__title"></div>
                     </li>
                     <li className="login-page__item--list-item">
-                        <div className="login-page__item--list-item__heading">experiencing with devops AND databases - SoftServe Academy</div>
-                        <div className="login-page__item--list-item__title">Fullstack web  developer with 2+ years of experience with REACT AND NODE.JS (NEST.JS)</div>
-                        <div className="login-page__item--list-item__title"></div>
-                    </li>
-                    <li className="login-page__item--list-item">
+                                         <div className="login-page__item--list-item__heading-main"></div>
                         <div className="login-page__item--list-item__heading">react sertification - SoftServe Academy</div>
                         <div className="login-page__item--list-item__title">Having gained solid development experience from previous courses, I continued working on certifications at SoftServe.  In the summer of 2025, I received a softserve certificate of react developer</div>
                         <div className="login-page__item--list-item__title"></div>
                     </li>
-                    <li className="login-page__item--list-item">
+                    <li className="login-page__item--list-item">          
                         <div className="login-page__item--list-item__heading">keep moving!</div>
                         <div className="login-page__item--list-item__title">I continue to thoroughly explore and use new practices in web development. I am always ready to implement the latest and most innovative solutions.</div>
                         <div className="login-page__item--list-item__title"></div>
                     </li>
-                </ul>
+                </ul > 
                 <Menu />
             </div>
-        </>
-    );
-};
-
-export default LobbyPageContent;
+        </> 
+    ); 
+}; 
+    
+    export default LobbyPageContent;
