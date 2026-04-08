@@ -384,6 +384,6 @@
         .login-page__title {
             font-size: 53px;
             text-shadow: var(--text-shadow-welcome-page__heading);
-            margin: 40vh 0 0 0;
+            margin: 35vh 0 0 0;
         }
     }
