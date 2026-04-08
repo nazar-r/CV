@@ -36,6 +36,23 @@ export const RenderingButtons = () => {
           <GithubIcon />
         </div>
       </div>
+      <div className="login-page__button-1">
+        <div className="login-page__button--title">
+          <div className="login-page__button--title-text">
+            certificates
+          </div>
+          <svg viewBox="0 0 24 24" className="login-page__button--icon">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </div>
+        <div className='login-page__button-hidden'>
+          <a href='/public/Certificate-htmlcss.pdf' download="rozhalovsky/html/css.pdf" className='login-page__button-hidden--item'>html/css</a>
+          <a href='/public/Certificate-JS.pdf' download="rozhalovsky/js.pdf" className='login-page__button-hidden--item'>JS</a>
+          <a href='/public/Certificate-React.pdf' download="rozhalovsky/react.pdf" className='login-page__button-hidden--item'>react</a>
+          <a href='/public/devops.pdf' download="rozhalovsky/devops.pdf" className='login-page__button-hidden--item'>devops</a>
+        </div>
+      </div>
 
     </div >
   );
