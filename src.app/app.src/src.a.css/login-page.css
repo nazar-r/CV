@@ -43,7 +43,10 @@
     }
 
     .login-page__item--list-item {
-        margin: 70px 0 200px 0;
+        height: 240px;
+        display: flex;
+        align-items: center;
+        scroll-snap-align: start;
     }
 
     .login-page__item--list-item__title {
