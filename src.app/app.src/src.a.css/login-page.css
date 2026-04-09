@@ -191,6 +191,7 @@
 
     .login-page__item--list-item__title--child {
         position: fixed;
+        bottom: 20vh;
         width: 300px;
         color: rgb(255, 213, 25);
         animation: fadeIn 0.2s ease forwards;
@@ -234,6 +235,14 @@
     }
 
     @media(min-width: 650px) {
+        .login-page__item--list-item__title--child {
+            position: fixed;
+            bottom: 20vh;
+            width: 500px;
+            color: rgb(255, 213, 25);
+            animation: fadeIn 0.2s ease forwards;
+        }
+
         .login-page__item--list-item__heading {
             font-size: 23px
         }
@@ -289,6 +298,15 @@
             align-items: center;
             scroll-snap-align: start;
         }
+
+        .login-page__item--list-item__title--child {
+            position: fixed;
+            bottom: 25vh;
+            width: 750px;
+            color: rgb(255, 213, 25);
+            animation: fadeIn 0.2s ease forwards;
+        }
+
     }
 
     @media(min-width: 900px) {
@@ -335,14 +353,6 @@
             display: flex;
             align-items: center;
             scroll-snap-align: start;
-        }
-
-
-        .login-page__item--list-item__title--child {
-            position: fixed;
-            width: 750px;
-            color: rgb(255, 213, 25);
-            animation: fadeIn 0.2s ease forwards;
         }
 
         .login-page__button-container {
