@@ -32,7 +32,7 @@ const LobbyPageContent = () => {
                 <ul className="menu-content__item--list">
                     <li className="login-page__item--list-item">
                         <div>
-                            <div className="login-page__item--list-item__heading">You can watch at my reults of 1.5 years of participation in a team-based SoftServe courses</div>
+                            <div className="login-page__item--list-item__heading">Here are my reults of 1.5 years of participation in a team-based SoftServe courses</div>
                             <div className="login-page__item--list-item__title">sroll below
                                 <svg viewBox="0 0 24 24" style={{ transform: "rotate(90deg)", margin: "0 0 -5px 6px" }} className="login-page__button--icon">
                                     <line x1="5" y1="12" x2="19" y2="12" />
