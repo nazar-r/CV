@@ -33,11 +33,6 @@ const LobbyPageContent = () => {
                     <li className="login-page__item--list-item">
                         <div>
                             <div className="login-page__item--list-item__heading">Here are my reults of 1.5 years of participation in a team-based SoftServe courses</div>
-                            <div className="login-page__item--list-item__title">sroll below
-                                <svg viewBox="0 0 24 24" style={{ transform: "rotate(90deg)", margin: "0 0 -5px 6px" }} className="login-page__button--icon">
-                                    <line x1="5" y1="12" x2="19" y2="12" />
-                                    <polyline points="12 5 19 12 12 19" />
-                                </svg></div>
                         </div>
                     </li>
                     <li className="login-page__item--list-item">
@@ -55,14 +50,14 @@ const LobbyPageContent = () => {
                     <li className="login-page__item--list-item">
                         <div>
                             <div className="login-page__item--list-item__heading">Certification: React Development</div>
-                              <a href='/Certificate-React.pdf' download="rozhalovsky/react.pdf" className='login-page__button-hidden--item'>Download</a>
+                            <a href='/Certificate-React.pdf' download="rozhalovsky/react.pdf" className='login-page__button-hidden--item'>Download</a>
 
                         </div>
                     </li>
                     <li className="login-page__item--list-item">
                         <div>
                             <div className="login-page__item--list-item__heading">Certification: Advanced Devops</div>
-                            <a href='/devops.pdf' download="rozhalovsky/devops.pdf" className='login-page__button-hidden--item'>Download</a> 
+                            <a href='/devops.pdf' download="rozhalovsky/devops.pdf" className='login-page__button-hidden--item'>Download</a>
                         </div>
                     </li>
                 </ul >
