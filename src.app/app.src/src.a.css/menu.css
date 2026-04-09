@@ -113,6 +113,7 @@
     .menu {
         padding: 0 20vw;
     }
+
     .menu-content__item--list {
         scroll-behavior: smooth;
         border-left: 2px solid #fff;
@@ -138,6 +139,15 @@
         z-index: 2147483646;
     }
 
+}
+
+
+@media(min-height: 900px) {
+    .login-page__title {
+        margin: 40vh 0 0 0;
+        font-size: 53px;
+        text-shadow: var(--text-shadow-welcome-page__heading);
+    }
 }
 
 @media (min-width: 1250px) {
@@ -168,6 +178,7 @@
         gap: 10vw;
     }
 }
+
 @media (min-width: 1450px) {
     .menu-content__item--list {
         scroll-behavior: smooth;

@@ -24,7 +24,7 @@
     scroll-behavior: smooth;
     margin: 50px 0 0 0;
     padding: 120px 0 0 0;
-    height: 240px;
+    height: 215px;
     list-style: none;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
@@ -33,7 +33,7 @@
 
 
 .login-page__item--list-item-1 {
-    height: 240px;
+    height: 215px;
     display: flex;
     align-items: left;
     flex-direction: column;
@@ -54,6 +54,7 @@
 }
 
 .login-page__item--list-item__title--button {
+
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -95,12 +96,34 @@
         transition: 0.2s;
     }
 
+
+    .menu-content__item--list {
+        scroll-behavior: smooth;
+        margin: 50px 0 0 0;
+        padding: 120px 0 0 0;
+        height: 170px;
+        list-style: none;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+
+
+    .login-page__item--list-item-1 {
+        height: 170px;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        scroll-snap-align: start;
+    }
+
+
     .login-page__item--list-item__title--field {
         width: 450px;
         color: white;
         margin: 10px 0 0 0;
         padding: 20px 0 20px 50px;
-        height: 60px;
+        height: 48px;
         background: black;
         box-shadow: 5px 5px 50px #00000065;
         border: none;
@@ -120,11 +143,11 @@
     }
 
     .login-page__item--list-item-1 {
-        height: 240px;
+        height: 170px;
         display: flex;
         align-items: center;
         flex-direction: row;
-        
+
         scroll-snap-align: start;
     }
 
@@ -133,7 +156,7 @@
         color: white;
         margin: 10px 0 0 0;
         padding: 20px 0 20px 50px;
-        height: 60px;
+        height: 50px;
         background: black;
         box-shadow: 5px 5px 50px #00000065;
         border: none;
