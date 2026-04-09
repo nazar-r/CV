@@ -27,30 +27,42 @@ const LobbyPageContent = () => {
     return (
         <>
             <div className="login-page">
-                <div className="login-page__title">get interested?</div>
-                <div className="login-page__title__heading">contact me and i wIll answer you soon</div>
+                <div className="login-page__title">MY SERTIFICATIONS</div>
+                <div className="login-page__title__heading">    </div>
                 <ul className="menu-content__item--list">
-                    <li className="login-page__item--list-item-1">
-                        <form id="contact-form" action="https://forminit.com/f/dmq045juc0x" method="POST" className="login-page__item--list-item__field--container">
-                            <input type="text" name="fi-sender-fullName" placeholder="your name" className="login-page__item--list-item__title--field" required />
-                            <input type="email" name="fi-sender-email" placeholder="your email" className="login-page__item--list-item__title--field" required />
-                            <textarea name="fi-text-message" placeholder="your message" className="login-page__item--list-item__title--field" required></textarea>
-                        </form>
-                        <button type="submit" form="contact-form" className="login-page__item--list-item__title--button">
-                            <div>Send</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="login-page__button--icon-1">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg>
-                        </button>
+                    <li className="login-page__item--list-item">
+                        <div>
+                            <div className="login-page__item--list-item__heading">My expirience is 1.5 years of participation in a team-based SoftServe courses in. In the same time I kept working on personal projects.</div>
+                            <div className="login-page__item--list-item__title">sroll below
+                                <svg viewBox="0 0 24 24" style={{ transform: "rotate(90deg)", margin: "0 0 -5px 6px" }} className="login-page__button--icon">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg></div>
+                        </div>
                     </li>
                     <li className="login-page__item--list-item">
                         <div>
-                            <div className="login-page__item--list-item__heading">My Socials</div>
-                            <div className="login-page__item--list-item__title-2">
-                                <a href="https://t.me/nazar_rr" className="login-page__item--list-item__title-1">Telegram</a>
-                                <a href="https://github.com/nazar-r/aNote" className="login-page__item--list-item__title-1">Github</a>
-                            </div>
+                            <div className="login-page__item--list-item__heading">Certification: html/css</div>
+                            <a href='/Certificate-htmlcss.pdf' download="rozhalovsky/html/css.pdf" className='login-page__button-hidden--item'>Download</a>
+                        </div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                        <div>
+                            <div className="login-page__item--list-item__heading">Certification: JS Development</div>
+                            <a href='/Certificate-JS.pdf' download="rozhalovsky/js.pdf" className='login-page__button-hidden--item'>Download</a>
+                        </div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                        <div>
+                            <div className="login-page__item--list-item__heading">Certification: React Development</div>
+                              <a href='/Certificate-React.pdf' download="rozhalovsky/react.pdf" className='login-page__button-hidden--item'>Download</a>
+
+                        </div>
+                    </li>
+                    <li className="login-page__item--list-item">
+                        <div>
+                            <div className="login-page__item--list-item__heading">Certification: Advanced Devops</div>
+                            <a href='/devops.pdf' download="rozhalovsky/devops.pdf" className='login-page__button-hidden--item'>Download</a> 
                         </div>
                     </li>
                 </ul >

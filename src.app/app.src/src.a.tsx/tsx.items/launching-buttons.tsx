@@ -36,7 +36,7 @@ export const RenderingButtons = () => {
           <GithubIcon />
         </div>
       </div>
-      <div className="login-page__button-1">
+      <div className="login-page__button" onClick={() => { navigate("/certifications") }}>
         <div className="login-page__button--title">
           <div className="login-page__button--title-text">
             certificates
@@ -45,12 +45,6 @@ export const RenderingButtons = () => {
             <line x1="5" y1="12" x2="19" y2="12" />
             <polyline points="12 5 19 12 12 19" />
           </svg>
-        </div>
-        <div className='login-page__button-hidden'>
-          <a href='/Certificate-htmlcss.pdf' download="rozhalovsky/html/css.pdf" className='login-page__button-hidden--item'>html/css</a>
-          <a href='/Certificate-JS.pdf' download="rozhalovsky/js.pdf" className='login-page__button-hidden--item'>JS</a>
-          <a href='/Certificate-React.pdf' download="rozhalovsky/react.pdf" className='login-page__button-hidden--item'>react</a>
-          <a href='/devops.pdf' download="rozhalovsky/devops.pdf" className='login-page__button-hidden--item'>devops</a>
         </div>
       </div>
 
