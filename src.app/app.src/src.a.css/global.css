@@ -105,7 +105,7 @@ input:-webkit-autofill {
 @media(min-width: 1250px) {
     .main-container {
         padding: 0 25vw 0 25vw;
-        background: linear-gradient(121.15deg, #00000000 -20.02%, #7230c780 100.31%), #131313;
+        background: linear-gradient(121.15deg, #00000000 -7%, #7230c780 100.31%), #131313;
     }
 }
 
