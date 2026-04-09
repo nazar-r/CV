@@ -35,7 +35,7 @@ const LobbyPageContent = () => {
                             <div className="login-page__item--list-item__heading">Here are my reults of 1.5 years of participation in a team-based SoftServe courses</div>
                             <div className='login-page__item--list-item__title'>Scroll down
 
-                                <svg width="5px" height="5px" viewBox="0 0 24 24" className="login-page__button--icon" style={{ margin:"0 0 -7px 8px",transform: 'rotate(90deg)' }}>
+                                <svg width="5px" height="5px" viewBox="0 0 24 24" className="login-page__button--icon" style={{ margin:"0 0 -7px 9px",transform: 'rotate(90deg)' }}>
                                     <line x1="5" y1="12" x2="19" y2="12" />
                                     <polyline points="12 5 19 12 12 19" />
                                 </svg>

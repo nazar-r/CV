@@ -191,7 +191,7 @@
 
     .login-page__item--list-item__title--child {
         position: fixed;
-        bottom: 20vh;
+        bottom: 16vh;
         width: 300px;
         color: rgb(255, 213, 25);
         animation: fadeIn 0.2s ease forwards;
@@ -301,7 +301,7 @@
 
         .login-page__item--list-item__title--child {
             position: fixed;
-            bottom: 25vh;
+            bottom: 23vh;
             width: 750px;
             color: rgb(255, 213, 25);
             animation: fadeIn 0.2s ease forwards;
