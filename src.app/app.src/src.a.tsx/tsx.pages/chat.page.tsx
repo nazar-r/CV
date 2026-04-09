@@ -33,6 +33,12 @@ const LobbyPageContent = () => {
                         <div>
                             <div className="login-page__item--list-item__heading">HI!  i am nazar rozhalovsky</div>
                             <div className="login-page__item--list-item__title">Fullstack web  developer with 2+ years of experience with REACT AND NODE.JS (NEST.JS)</div>
+                                    <div className="login-page__item--list-item__title">sroll below
+                                <svg viewBox="0 0 24 24" style={{ transform: "rotate(90deg)", margin: "0 0 -5px 6px" }} className="login-page__button--icon">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg></div>
+                        {/* </div> */}
                         </div>
                     </li>
                     <li className="login-page__item--list-item">

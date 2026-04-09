@@ -37,7 +37,7 @@ const LobbyPageContent = () => {
                                     <a href="https://amessage.site" className="login-page__item--list-item__title-1"> link </a>
                                     <div className="login-page__item--list-item__title--child">NOTE: The first launch may take up to 50 seconds for the server to start.</div>
                                 </div>
-                                <a href="https://github.com/nazar-r/aMessage" className="login-page__item--list-item__title-1">look on gihtub</a>
+                                <a href="https://github.com/nazar-r/aMessage" className="login-page__item--list-item__title-1">on gihtub</a>
                             </div>
                         </div>
                     </li>
