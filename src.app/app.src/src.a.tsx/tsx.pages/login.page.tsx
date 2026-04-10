@@ -3,7 +3,7 @@ import { Menu } from '../tsx.items/items.menu/menu';
 
 const LoginPageContent = () => (
     <div className="login-page">
-        <div className="login-page__title">Explore the projects!</div>
+        <div className="login-page__title">Explore my projects!</div>
         <RenderingButtons />
         <Menu />
     </div>

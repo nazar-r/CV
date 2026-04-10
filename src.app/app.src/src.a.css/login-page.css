@@ -425,7 +425,7 @@
         }
 
         .login-page__title {
-            font-size: 53px;
+            font-size: 51px;
             text-shadow: var(--text-shadow-welcome-page__heading);
         }
     }
