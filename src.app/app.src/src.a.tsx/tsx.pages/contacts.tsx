@@ -13,7 +13,7 @@ const LobbyPageContent = () => {
             if (!paused) {
                 setIndex((prev) => prev + 1);
             }
-        }, 5000);
+        }, 3800);
 
         return () => clearInterval(interval);
     }, [paused]);
