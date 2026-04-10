@@ -35,7 +35,7 @@ const LobbyPageContent = () => {
                             <div className="login-page__item--list-item__heading">Here are my reults of 1.5 years of participation in a team-based SoftServe courses</div>
                             <div className='login-page__item--list-item__title'>Scroll down
 
-                                <svg width="5px" height="5px" viewBox="0 0 24 24" className="login-page__button--icon" style={{ margin:"0 0 -7px 9px",transform: 'rotate(90deg)' }}>
+                                <svg viewBox="0 0 24 24" className="login-page__button--icon-1" style={{ margin: "0 0 -6.5px 2px", transform: 'rotate(90deg)' }}>
                                     <line x1="5" y1="12" x2="19" y2="12" />
                                     <polyline points="12 5 19 12 12 19" />
                                 </svg>
@@ -46,26 +46,47 @@ const LobbyPageContent = () => {
                     <li className="login-page__item--list-item">
                         <div>
                             <div className="login-page__item--list-item__heading">Certification: html/css</div>
-                            <a href='/Certificate-htmlcss.pdf' download="rozhalovsky/html/css.pdf" className='login-page__button-hidden--item'>Download</a>
+                            <a href='/Certificate-htmlcss.pdf' download="rozhalovsky/html/css.pdf" className='login-page__button-hidden--item'>Download
+
+                                <svg viewBox="0 0 24 24" className="login-page__button--icon-1" style={{ margin: "0 0 -6.5px 2px", transform: 'rotate(90deg)' }}>
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </a>
                         </div>
+
                     </li>
                     <li className="login-page__item--list-item">
                         <div>
                             <div className="login-page__item--list-item__heading">Certification: JS Development</div>
                             <a href='/Certificate-JS.pdf' download="rozhalovsky/js.pdf" className='login-page__button-hidden--item'>Download</a>
+                            <svg viewBox="0 0 24 24" className="login-page__button--icon-1" style={{ margin: "0 0 -6.5px 2px", transform: 'rotate(90deg)' }}>
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
                         </div>
                     </li>
                     <li className="login-page__item--list-item">
                         <div>
                             <div className="login-page__item--list-item__heading">Certification: React Development</div>
-                            <a href='/Certificate-React.pdf' download="rozhalovsky/react.pdf" className='login-page__button-hidden--item'>Download</a>
+                            <a href='/Certificate-React.pdf' download="rozhalovsky/react.pdf" className='login-page__button-hidden--item'>Download
+                                <svg viewBox="0 0 24 24" className="login-page__button--icon-1" style={{ margin: "0 0 -6.5px 2px", transform: 'rotate(90deg)' }}>
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </a>
 
                         </div>
                     </li>
                     <li className="login-page__item--list-item">
                         <div>
                             <div className="login-page__item--list-item__heading">Certification: Advanced Devops</div>
-                            <a href='/devops.pdf' download="rozhalovsky/devops.pdf" className='login-page__button-hidden--item'>Download</a>
+                            <a href='/devops.pdf' download="rozhalovsky/devops.pdf" className='login-page__button-hidden--item'>Download
+                                <svg viewBox="0 0 24 24" className="login-page__button--icon-1" style={{ margin: "0 0 -6.5px 2px", transform: 'rotate(90deg)' }}>
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </a>
                         </div>
                     </li>
                 </ul >

@@ -13,6 +13,18 @@
         margin: 58px 0 0 0;
     }
 
+    .login-page__button--icon-1 {
+        /* margin: 0 0 0 9px; */
+        width: 22px;
+        height: 22px;
+        stroke: white;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+
+    }
+
     .login-page__item--list-item__title--container {
         display: flex;
         flex-direction: row;
@@ -24,8 +36,6 @@
             margin: 40vh 0 0 0;
         }
     }
-
-
 
     .login-page__button--icon {
         margin: 0 0 0 9px;
