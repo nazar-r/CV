@@ -1,41 +1,54 @@
-import { useState } from 'react';
-import { useOneOnOneRoom } from "../../src.a.chats/ws.chats";
-import { useLocation } from "react-router-dom";
 import { Menu } from '../tsx.items/items.menu/menu';
-
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
 
 const LobbyPageContent = () => {
     const navigate = useNavigate();
-    const location = useLocation();
-    const peerWsId = location.state?.peerWsId || "";
-    const { messages, isPeerOnline, sendMessage, removeMessage, updateMessage } = useOneOnOneRoom({ peerWsId });
-    const [defEdit, setEdit] = useState(false);
-    const [text, setText] = useState("");
+    const listRef = useRef<HTMLUListElement | null>(null);
+    const [index, setIndex] = useState(0);
+    const [paused, setPaused] = useState(false);
 
-    const switchEdit = (e: React.MouseEvent) => {
-        e.stopPropagation();
-        setEdit(prev => !prev);
-    };
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (!paused) {
+                setIndex((prev) => prev + 1);
+            }
+        }, 5000);
 
-    const handleSubmit = () => {
-        if (!text.trim()) return;
-        sendMessage({ messageStatus: "mine", messageId: "", content: text });
-        setText("");
-    };
+        return () => clearInterval(interval);
+    }, [paused]);
+
+    useEffect(() => {
+        const list = listRef.current;
+        if (!list) return;
+
+        const items = list.children;
+        if (items.length === 0) return;
+
+        const nextIndex = index % items.length;
+        const element = items[nextIndex] as HTMLElement;
+
+        element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    }, [index]);
 
     return (
         <>
             <div className="login-page">
                 <div className="login-page__title">interested?</div>
                 <div className="login-page__title__heading">contact me and i wIll answer you soon</div>
-                <ul className="menu-content__item--list">
-                    <li className="login-page__item--list-item-1">
+
+                <ul ref={listRef} className="menu-content__item--list">
+
+                    <li className="login-page__item--list-item-1" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                         <form id="contact-form" action="https://forminit.com/f/dmq045juc0x" method="POST" className="login-page__item--list-item__field--container">
                             <input type="text" name="fi-sender-fullName" placeholder="your name" className="login-page__item--list-item__title--field" required />
                             <input type="email" name="fi-sender-email" placeholder="your email" className="login-page__item--list-item__title--field" required />
                             <textarea name="fi-text-message" placeholder="your message" className="login-page__item--list-item__title--field" required></textarea>
                         </form>
+
                         <button type="submit" form="contact-form" className="login-page__item--list-item__title--button">
                             <div>Send</div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="login-page__button--icon-1">
@@ -44,18 +57,21 @@ const LobbyPageContent = () => {
                             </svg>
                         </button>
                     </li>
-                    <li className="login-page__item--list-item">
+
+                    <li className="login-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                         <div>
                             <div className="login-page__item--list-item__heading">My Socials</div>
                             <div className="login-page__item--list-item__title-2">
-                                <a href="https://t.me/nazar_rr" className="login-page__item--list-item__title-1">Telegram</a>
+                                <a href="https://t.me/nazar_rr"  style={{ margin: "0 0 15px  0" }}  className="login-page__item--list-item__title-1">Telegram</a>
                                 <a href="https://github.com/nazar-r/aNote" className="login-page__item--list-item__title-1">Github</a>
                             </div>
                         </div>
                     </li>
-                </ul >
+
+                </ul>
+
                 <Menu />
-            </div >
+            </div>
         </>
     );
 };

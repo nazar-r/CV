@@ -92,7 +92,7 @@
     .login-page__item--list-item__title-1 {
         font-size: 14px;
         max-width: 110px;
-        margin: 20px 50px 0 0;
+        margin: 0px 50px 0 0;
         text-decoration: none;
         color: #ffffff;
         opacity: 80%;
@@ -349,7 +349,7 @@
 
     @media(min-width: 1250px) {
         .login-page__item--list-item {
-            height: 170px;
+
             display: flex;
             align-items: center;
             scroll-snap-align: start;
@@ -422,6 +422,15 @@
 
 
     @media(min-width: 1500px) {
+
+        .login-page__item--list-item {
+            height: 170px;
+            display: flex;
+            align-items: center;
+            scroll-snap-align: start;
+        }
+
+
         .login-page__button-container {
             display: flex;
             flex-direction: row;

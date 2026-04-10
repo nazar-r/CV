@@ -39,7 +39,7 @@ export const RenderingButtons = () => {
       <div className="login-page__button" onClick={() => { navigate("/certifications") }}>
         <div className="login-page__button--title">
           <div className="login-page__button--title-text">
-            certificates
+           my certificates
           </div>
           <svg viewBox="0 0 24 24" className="login-page__button--icon">
             <line x1="5" y1="12" x2="19" y2="12" />
