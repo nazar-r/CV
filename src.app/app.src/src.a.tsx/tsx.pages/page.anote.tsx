@@ -11,7 +11,7 @@ const LobbyPageContent = () => {
             if (!paused) {
                 setIndex((prev) => prev + 1);
             }
-        }, 2800);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, [paused]);
@@ -34,37 +34,27 @@ const LobbyPageContent = () => {
 
     return (
         <>
-            <div className="login-page">
-                <div className="login-page__title">THE Anote</div>
-
+            <div className="projects-page">
+                <div className="projects-page__title">THE Anote</div>
                 <ul ref={listRef} className="menu-content__item--list">
-
-                    <li className="login-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
+                    <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                         <div>
-                            <div className="login-page__item--list-item__heading">
-                                the first author's project. notes web application with crud based on react and nest.js
-                            </div>
-
-                            <div className="login-page__item--list-item__title--container">
-                                <a href="https://github.com/nazar-r/aNote" className="login-page__item--list-item__title-1">
+                            <div className="projects-page__item--list-item__heading">The first author's project. notes web application with crud based on react and nest.js</div>
+                            <div className="projects-page__item--list-item__title--container">
+                                <a href="https://github.com/nazar-r/aNote" className="projects-page__item--list-item__title-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" style={{ margin: "0 6px -2px 0" }} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
                                     </svg>
-                                    on github
+                                    on Github
                                 </a>
                             </div>
                         </div>
                     </li>
 
-                    <li className="login-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
+                    <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                         <div>
-                            <div className="login-page__item--list-item__heading">
-                                technologies used
-                            </div>
-
-                            <div className="login-page__item--list-item__title">
-                                Typescript, react, react router, react query, nestjs (on express), jwt Authentication, prisma orm, postgresql
-                            </div>
+                            <div className="projects-page__item--list-item__heading">technologies used</div>
+                            <div className="projects-page__item--list-item__title">Typescript, react, react router, react query, nestjs (on express), jwt Authentication, prisma orm, postgresql </div>
                         </div>
                     </li>
 

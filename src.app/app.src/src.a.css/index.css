@@ -1,8 +1,5 @@
 @import "global.css";
-@import "welcome-page.css";
-@import "choosing.user.page.css";
-@import "chat.page.css";
-@import "contacts.css";
-/* @import "amessage.css"; */
-@import "login-page.css";
+@import "page.welcome.css";
+@import "page.contacts.css";
+@import "page.projects.css";
 @import "menu.css";

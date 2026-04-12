@@ -1,20 +1,17 @@
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { authentication } from './tsx.extensions/authentication.ts';
 import { lazy, Suspense } from 'react';
 import type { RouteObject } from 'react-router-dom';
 import type { ReactElement } from 'react';
 import '../src.a.css/index.css';
 
 const Layout = lazy(() => import('./tsx.items/layout.tsx'));
-const LoginPage = lazy(() => import('./tsx.pages/login.page.tsx'));
-const WelcomePage = lazy(() => import('./tsx.pages/welcome.page.tsx'));
-const ChatPage = lazy(() => import('./tsx.pages/chat.page.tsx'));
-const AnotePage = lazy(() => import('./tsx.pages/anote.tsx'));
-const AmessagePage = lazy(() => import('./tsx.pages/amessage.tsx'));
-const ContactsPage = lazy(() => import('./tsx.pages/contacts.tsx'));
-const ChoosingUserPage = lazy(() => import('./tsx.pages/choosing.user.page.tsx'));
-const CertificationsPage = lazy(() => import('./tsx.pages/certifications.tsx'));
+const ProjectsPage = lazy(() => import('./tsx.pages/page.projects.tsx'));
+const WelcomePage = lazy(() => import('./tsx.pages/page.welcome.tsx'));
+const AboutPage = lazy(() => import('./tsx.pages/page.about.tsx'));
+const ANotePage = lazy(() => import('./tsx.pages/page.anote.tsx'));
+const AMessagePage = lazy(() => import('./tsx.pages/page.amessage.tsx'));
+const ContactsPage = lazy(() => import('./tsx.pages/page.contacts.tsx'));
+const CertificationsPage = lazy(() => import('./tsx.pages/page.certifications.tsx'));
 
 const withSuspense = (component: ReactElement) => (
   <Suspense>{component}</Suspense>
@@ -26,11 +23,10 @@ const contentRoutes: RouteObject[] = [
     children: [
       { index: true, element: <Navigate to="/welcome" replace /> },
       { path: 'welcome', element: withSuspense(<WelcomePage />) },
-      { path: 'lobby', element: withSuspense(<LoginPage />) },
-      { path: 'projects', element: withSuspense(<LoginPage />) },
-      { path: 'amessage', element: withSuspense(<AmessagePage />) },
-      { path: 'anote', element: withSuspense(<AnotePage />) },
-      { path: 'about', element: (withSuspense(<ChatPage />)) },
+      { path: 'projects', element: withSuspense(<ProjectsPage />) },
+      { path: 'amessage', element: withSuspense(<AMessagePage />) },
+      { path: 'anote', element: withSuspense(<ANotePage />) },
+      { path: 'about', element: (withSuspense(<AboutPage />)) },
       { path: 'contacts', element: (withSuspense(<ContactsPage />)) },
       { path: 'certifications', element: (withSuspense(<CertificationsPage />)) },
     ],
@@ -38,13 +34,9 @@ const contentRoutes: RouteObject[] = [
 ];
 
 const appRouter = createBrowserRouter(contentRoutes);
-const queryClient = new QueryClient();
-
 const RouterRendering = () => {
   return (
-      <QueryClientProvider client={queryClient}>
-        <RouterProvider router={appRouter} />
-      </QueryClientProvider>
+    <RouterProvider router={appRouter} />
   );
 };
 

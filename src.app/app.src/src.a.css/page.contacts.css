@@ -1,10 +1,10 @@
-.login-page__title__heading {
+.projects-page__title__heading {
     opacity: 80%;
     margin: 10px 0 0 0;
     font-size: 20px;
 }
 
-.login-page__item--list-item__title--field {
+.projects-page__item--list-item__title--field {
     width: 100%;
     color: white;
     margin: 10px 0 0 0;
@@ -15,7 +15,7 @@
     border: none;
 }
 
-.login-page__item--list-item__field--container-1 {
+.projects-page__item--list-item__field--container-1 {
     display: flex;
     flex-direction: column;
 }
@@ -32,7 +32,7 @@
 }
 
 
-.login-page__item--list-item-1 {
+.projects-page__item--list-item-1 {
     height: 200px;
     display: flex;
     align-items: left;
@@ -40,7 +40,7 @@
     scroll-snap-align: start;
 }
 
-.login-page__item--list-item__field--container {
+.projects-page__item--list-item__field--container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,12 +48,12 @@
 
 }
 
-.login-page__item--list-item__field {
+.projects-page__item--list-item__field {
     display: flex;
     flex-direction: column;
 }
 
-.login-page__item--list-item__title--button {
+.projects-page__item--list-item__title--button {
 
     display: flex;
     flex-direction: row;
@@ -66,12 +66,12 @@
     opacity: 80%;
 }
 
-.login-page__item--list-item-1:not(:hover) .login-page__item--list-item__title--button {
+.projects-page__item--list-item-1:not(:hover) .projects-page__item--list-item__title--button {
     opacity: 0;
     pointer-events: none;
 }
 
-.login-page__button--icon-1 {
+.projects-page__button--icon-1 {
     margin: 0 0 0 3px;
     padding: 0 0 5px 0;
     width: 24px;
@@ -85,13 +85,13 @@
 
 
 @media(min-width: 650px) {
-    .login-page__item--list-item__title--button:hover {
+    .projects-page__item--list-item__title--button:hover {
         text-shadow: var(--text-shadow-welcome-page__heading);
         cursor: pointer;
         transform: var(--transform-welcome-page__button--item);
     }
 
-    .login-page__item--list-item__title--field:hover {
+    .projects-page__item--list-item__title--field:hover {
         height: 90px;
         transition: 0.2s;
     }
@@ -109,7 +109,7 @@
     }
 
 
-    .login-page__item--list-item-1 {
+    .projects-page__item--list-item-1 {
         height: 170px;
         display: flex;
         align-items: left;
@@ -118,7 +118,7 @@
     }
 
 
-    .login-page__item--list-item__title--field {
+    .projects-page__item--list-item__title--field {
         width: 450px;
         color: white;
         margin: 10px 0 0 0;
@@ -131,18 +131,18 @@
 }
 
 @media(min-width: 950px) {
-    .login-page__item--list-item__title--button:hover {
+    .projects-page__item--list-item__title--button:hover {
         text-shadow: var(--text-shadow-welcome-page__heading);
         cursor: pointer;
         transform: var(--transform-welcome-page__button--item);
     }
 
-    .login-page__item--list-item__title--field:hover {
+    .projects-page__item--list-item__title--field:hover {
         height: 90px;
         transition: 0.2s;
     }
 
-    .login-page__item--list-item-1 {
+    .projects-page__item--list-item-1 {
         height: 150px;
         display: flex;
         align-items: center;
@@ -151,7 +151,7 @@
         scroll-snap-align: start;
     }
 
-    .login-page__item--list-item__title--field {
+    .projects-page__item--list-item__title--field {
         width: 450px;
         color: white;
         margin: 10px 0 0 0;
@@ -162,7 +162,7 @@
         border: none;
     }
 
-    .login-page__item--list-item__title--button {
+    .projects-page__item--list-item__title--button {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;

@@ -10,11 +10,9 @@ const WelcomePageContent = () => {
         <div className="welcome-page-container__description">Nazar Rozhalovsky, FullStack Developer</div>
       </div>
 
-      <div className="welcome-page__button" onClick={() => { navigate("/lobby") }
-      }
-      >
+      <div className="welcome-page__button" onClick={() => { navigate("/projects") }}>
         <div className="welcome-page__button--title">Begin</div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="login-page__button--icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="projects-page__button--icon">
           <line x1="5" y1="12" x2="19" y2="12" />
           <polyline points="12 5 19 12 12 19" />
         </svg>
