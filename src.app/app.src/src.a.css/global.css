@@ -82,29 +82,29 @@ input:-webkit-autofill {
 
 
 .main-container {
- background: linear-gradient(121.15deg, #00000000 20.02%, #7230c780 100%), #131313;
-    padding: 0 11vw 0 11vw;
-    width: 100vw;
-    height: 100vh;
+    background: linear-gradient(121.15deg, #00000000 20.02%, #7230c780 100%), #131313;
+    padding: 0 11dvw 0 11dvw;
+    width: 100dvw;
+    height: 100dvh;
     position: relative;
 }
 
 @media(min-width: 650px) {
     .main-container {
-        padding: 0 16vw 0 16vw;
-         background: linear-gradient(121.15deg, #00000000 12.02%, #7230c780 100%), #131313;
+        padding: 0 16dvw 0 16dvw;
+        background: linear-gradient(121.15deg, #00000000 12.02%, #7230c780 100%), #131313;
     }
 }
 
 @media(min-width: 950px) {
     .main-container {
-        padding: 0 18vw 0 18vw;
+        padding: 0 18dvw 0 18dvw;
     }
 }
 
 @media(min-width: 1250px) {
     .main-container {
-        padding: 0 25vw 0 25vw;
+        padding: 0 25dvw 0 25dvw;
         background: linear-gradient(121.15deg, #00000000 -7%, #7230c780 100.31%), #131313;
     }
 }
@@ -136,7 +136,7 @@ input:-webkit-autofill {
     --tablet-width-tablet-welcome-page__heading: 165px;
     --desktop-width-welcome-page__heading-button: 220px;
 
-    --height-welcome-page: 100vh;
+    --height-welcome-page: 100dvh;
     --height-welcome-page__heading-button: 60px;
     --desktop-height-welcome-page__button--item: 75px;
     --height-tasks__field-container: 60px;

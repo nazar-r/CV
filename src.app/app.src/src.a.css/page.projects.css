@@ -33,7 +33,7 @@
 
     @media(min-height: 900px) {
         .welcome-page-container {
-            margin: 40vh 0 0 0;
+            margin: 40dvh 0 0 0;
         }
     }
 
@@ -168,7 +168,7 @@
     }
 
     .projects-page__title {
-        margin: 28vh 0 0 0;
+        margin: 28dvh 0 0 0;
         color: var(--color-text);
         font-size: 35px;
         text-shadow: var(--text-shadow-welcome-page__heading);
@@ -201,7 +201,7 @@
 
     .projects-page__item--list-item__title--child {
         position: fixed;
-        bottom: 16vh;
+        bottom: 16dvh;
         width: 300px;
         color: rgb(255, 213, 25);
         animation: fadeIn 0.2s ease forwards;
@@ -247,7 +247,7 @@
     @media(min-width: 650px) {
         .projects-page__item--list-item__title--child {
             position: fixed;
-            bottom: 20vh;
+            bottom: 20dvh;
             width: 500px;
             color: rgb(255, 213, 25);
             animation: fadeIn 0.2s ease forwards;
@@ -279,13 +279,13 @@
         .projects-page__title {
             font-size: 36px;
             text-shadow: var(--text-shadow-welcome-page__heading);
-            margin: 35vh 0 0 0;
+            margin: 35dvh 0 0 0;
         }
     }
 
     @media(min-height: 900px) {
         .projects-page__title {
-            margin: 40vh 0 0 0;
+            margin: 40dvh 0 0 0;
             font-size: 53px;
             text-shadow: var(--text-shadow-welcome-page__heading);
         }
@@ -299,7 +299,7 @@
 
         .projects-page__item--list-item__title--child {
             position: fixed;
-            bottom: 23vh;
+            bottom: 23dvh;
             width: 750px;
             color: rgb(255, 213, 25);
             animation: fadeIn 0.2s ease forwards;
@@ -318,7 +318,7 @@
         .projects-page__title {
             font-size: 50px;
             text-shadow: var(--text-shadow-welcome-page__heading);
-            /* margin: 40vh 0 0 0; */
+            /* margin: 40dvh 0 0 0; */
         }
 
         .projects-page__button-1,
