@@ -13,19 +13,26 @@
 }
 
 .welcome-page-container__title {
-    font-size: 45px;
+    font-size: 40px;
     max-width: 500px;
 }
 
 .welcome-page-container__description {
     margin: var(--welcome-page-container__description);
-    font-size: 17px;
+    font-size: 15px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 630;
 }
 
 .welcome-page__button--icon {
-    margin: 0 0 0 10px;
+    margin: 1px 0 0 10px;
+    width: 23px;
+    height: 23px;
+    stroke: white;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
 }
 
 .welcome-page__button {
@@ -33,7 +40,6 @@
     margin: 100px 0 0 0;
     font-size: var(--font-size-xs);
     text-shadow: 5px 5px 50px #000000b0;
-    box-sizing: border-box;
 }
 
 .welcome-page__button:hover {
@@ -43,20 +49,20 @@
     cursor: pointer;
 }
 
-@media(min-height: 900px) {
+/* @media(min-height: 800px) { */
     .welcome-page-container {
         margin: 40dvh 0 0 0;
     }
-}
+/* } */
 
 @media(min-width: 650px) {
     .welcome-page-container__title {
-        font-size: var(--font-size-xxl);
+        font-size: 50px;
     }
 
     .welcome-page-container__description {
         margin: var(--welcome-page-container__description-650);
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -68,10 +74,20 @@
 
 @media(min-width: 1250px) {
     .welcome-page-container__title {
-        font-size: var(--font-size-xxl);
+        font-size: 50px;
     }
 
     .welcome-page__button {
         font-size: var(--font-size-xs);
+    }
+}
+
+@media(min-width: 1550px) {
+    .welcome-page-container__title {
+        font-size: 53px;
+    }
+
+    .welcome-page-container__description {
+        font-size: 18px;
     }
 }

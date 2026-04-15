@@ -17,8 +17,12 @@
 
 
 body {
-    position: fixed;
-    overflow-x: clip;
+    background: linear-gradient(121.15deg, #00000000 20.02%, #7230c780 100%), #131313;
+    /* background: rgb(223, 187, 91); */
+    padding: 0 12dvw 0 12dvw;
+    width: 100dvw;
+    height: 100dvh;
+    position: relative;
 }
 
 input {
@@ -81,31 +85,31 @@ input:-webkit-autofill {
 
 
 
-.main-container {
+/* .main-container {
     background: linear-gradient(121.15deg, #00000000 20.02%, #7230c780 100%), #131313;
-    padding: 0 11dvw 0 11dvw;
-    width: 100dvw;
-    height: 100dvh;
-    position: relative;
-}
+} */
 
 @media(min-width: 650px) {
-    .main-container {
+    body {
         padding: 0 16dvw 0 16dvw;
         background: linear-gradient(121.15deg, #00000000 12.02%, #7230c780 100%), #131313;
+        /* background: rgb(223, 187, 91) */
     }
 }
 
 @media(min-width: 950px) {
-    .main-container {
+    
+    body {
+          /* background: rgb(223, 187, 91); */
         padding: 0 18dvw 0 18dvw;
     }
 }
 
 @media(min-width: 1250px) {
-    .main-container {
+    body {
         padding: 0 25dvw 0 25dvw;
-        background: linear-gradient(121.15deg, #00000000 -7%, #7230c780 100.31%), #131313;
+        /* background: rgb(223, 187, 91); */
+        /* background: linear-gradient(121.15deg, #00000000 -7%, #7230c780 100.31%), #131313; */
     }
 }
 

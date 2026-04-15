@@ -6,15 +6,15 @@ const LobbyPageContent = () => {
     const [index, setIndex] = useState(0);
     const [paused, setPaused] = useState(false);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if (!paused) {
-                setIndex((prev) => prev + 1);
-            }
-        }, 2400);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         if (!paused) {
+    //             setIndex((prev) => prev + 1);
+    //         }
+    //     }, 2400);
 
-        return () => clearInterval(interval);
-    }, [paused]);
+    //     return () => clearInterval(interval);
+    // }, [paused]);
 
     useEffect(() => {
         const list = listRef.current;

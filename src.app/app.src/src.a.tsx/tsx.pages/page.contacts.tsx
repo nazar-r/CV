@@ -36,9 +36,9 @@ const LobbyPageContent = () => {
         <>
             <div className="projects-page">
                 <div className="projects-page__title">Interested?</div>
-                <div className="projects-page__title__heading">Contact me and i wIll answer you soon</div>
+                <div className="projects-page__title__heading">Then let's talk!</div>
                 <ul ref={listRef} className="menu-content__item--list">
-                    <li className="projects-page__item--list-item-1" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
+                    {/* <li className="projects-page__item--list-item-1" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                         <form id="contact-form" action="https://forminit.com/f/dmq045juc0x" method="POST" className="projects-page__item--list-item__field--container">
                             <input type="text" name="fi-sender-fullName" placeholder="your name" className="projects-page__item--list-item__title--field" required />
                             <input type="email" name="fi-sender-email" placeholder="your email" className="projects-page__item--list-item__title--field" required />
@@ -52,16 +52,17 @@ const LobbyPageContent = () => {
                                 <polyline points="12 5 19 12 12 19" />
                             </svg>
                         </button>
-                    </li>
+                    </li> */}
 
                     <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
-                        <div>
+       
                             <div className="projects-page__item--list-item__heading">My Socials</div>
                             <div className="projects-page__item--list-item__title-2">
-                                <a href="https://t.me/nazar_rr"  style={{ margin: "0 0 15px  0" }}  className="projects-page__item--list-item__title-1">Telegram</a>
+                                <a href="https://t.me/nazar_rr" style={{ margin: "0 0 15px  0" }} className="projects-page__item--list-item__title-1">Telegram</a>
+                                <a href="https://www.linkedin.com/in/nazar-rozhalovsky-214082283" style={{ margin: "0 0 15px  0" }} className="projects-page__item--list-item__title-1">LinkedIn</a>
                                 <a href="https://github.com/nazar-r/aNote" className="projects-page__item--list-item__title-1">Github</a>
                             </div>
-                        </div>
+
                     </li>
 
                 </ul>

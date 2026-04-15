@@ -86,9 +86,9 @@
 .menu-content__item--list {
     scroll-behavior: smooth;
     border-left: 2px solid #fff;
-    margin: 50px 0 0 0;
-    padding: 120px 0 0 50px;
-    height: 200px;
+    margin: 8dvh 0 17dvh 0;
+    padding: 0px 0 0 40px;
+
     list-style: none;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
@@ -118,7 +118,7 @@
         scroll-behavior: smooth;
         border-left: 2px solid #fff;
         margin: 50px 0 0 0;
-        padding: 120px 0 0 50px;
+        margin: 8dvh 0 17dvh 0;
         height: 170px;
         list-style: none;
         overflow-y: auto;
@@ -155,7 +155,7 @@
         scroll-behavior: smooth;
         border-left: 2px solid #fff;
         margin: 50px 0 0 0;
-        padding: 120px 0 0 50px;
+        margin: 8dvh 0 17dvh 0;
         height: 150px;
         list-style: none;
         overflow-y: auto;
@@ -184,7 +184,7 @@
         scroll-behavior: smooth;
         border-left: 2px solid #fff;
         margin: 50px 0 0 0;
-        padding: 120px 0 0 50px;
+        margin: 8dvh 0 17dvh 0;
         height: 170px;
         list-style: none;
         overflow-y: auto;

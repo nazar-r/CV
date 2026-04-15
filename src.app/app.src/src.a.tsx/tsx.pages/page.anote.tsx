@@ -35,7 +35,7 @@ const LobbyPageContent = () => {
     return (
         <>
             <div className="projects-page">
-                <div className="projects-page__title">THE Anote</div>
+                <div className="projects-page__title">The Note App</div>
                 <ul ref={listRef} className="menu-content__item--list">
                     <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                         <div>

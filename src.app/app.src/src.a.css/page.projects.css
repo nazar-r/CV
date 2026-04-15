@@ -1,10 +1,21 @@
     .projects-page {
         display: flex;
-        flex-direction: column;
         color: var(--color-text) !important;
+        flex-direction: column;
         align-items: left;
         height: var(--height-welcome-page);
         animation: fadeIn 0.2s ease forwards;
+    }
+
+    .projects-page__button--icon {
+        margin: 0 0 0 auto;
+        width: 23px;
+        height: 23px;
+        stroke: white;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
     }
 
     .projects-page__button-container {
@@ -22,7 +33,6 @@
         stroke-linecap: round;
         stroke-linejoin: round;
         fill: none;
-
     }
 
     .projects-page__item--list-item__title--container {
@@ -37,28 +47,10 @@
         }
     }
 
-    .projects-page__button--icon {
-        margin: 0 0 0 9px;
-        width: 23px;
-        height: 23px;
-        stroke: white;
-        stroke-width: 2.5;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: none;
-    }
-
     .projects-page__button--title-text {
         white-space: nowrap;
         overflow: hidden;
     }
-
-    .projects-page__button--title {
-        display: flex;
-        flex-direction: row;
-        /* align-items: center; */
-    }
-
 
     .projects-page__item--list-item__heading-main {
         font-size: 35px;
@@ -85,18 +77,31 @@
         opacity: 100%;
     }
 
+    .projects-page__item--list-item-1 {
+        margin: 0 0 90px 0;
+    }
+
     .projects-page__item--list-item {
-        height: 200px;
-        margin: 18px 0 18px 0;
+        width: 100%;
+        height: 100%;
+        margin: 0 0 90px 0;
         display: flex;
-        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         scroll-snap-align: start;
     }
 
+    .projects-page__item--list-item__title-spec,
     .projects-page__item--list-item__title {
         font-size: 14px;
+        /* word-spacing: ; */
         margin: 20px 0 0 0;
         opacity: 80%;
+    }
+
+    .projects-page__item--list-item__title-spec {
+        font-size: 10px;
+
     }
 
     .projects-page__item--list-item__title-1 {
@@ -115,18 +120,17 @@
     }
 
     .projects-page__button {
-        margin: 0 0 20px 0;
-        padding: 0 30px 0 20px;
+        margin: 0 0 15px 0;
+        padding: 0 20px 0 20px;
         box-sizing: border-box;
-        border: none;
         width: 215px;
-        height: 60px;
+        height: 53px;
         display: flex;
         flex-direction: row;
         align-items: center;
         background: #000000;
         box-shadow: 5px 5px 50px #00000065;
-        font-size: 16px;
+        font-size: 15px;
         color: #ffffff;
     }
 
@@ -260,7 +264,7 @@
         .projects-page__button-container {
             display: flex;
             flex-direction: column;
-            margin: 85px 0 0 0;
+            margin: 40px 0 0 0;
         }
 
         .projects-page__item--list-item__title-1:hover {
@@ -272,7 +276,9 @@
         .projects-page__item--list-item {
             height: 170px;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: center;
             scroll-snap-align: start;
         }
 
@@ -283,26 +289,10 @@
         }
     }
 
-    @media(min-height: 900px) {
-        .projects-page__title {
-            margin: 40dvh 0 0 0;
-            font-size: 53px;
-            text-shadow: var(--text-shadow-welcome-page__heading);
-        }
+    @media(min-height: 800px) {
+        .projects-page__button-container {
+            margin: 85px 0 0 0;
 
-        .projects-page__item--list-item {
-            height: 150px;
-            display: flex;
-            align-items: center;
-            scroll-snap-align: start;
-        }
-
-        .projects-page__item--list-item__title--child {
-            position: fixed;
-            bottom: 23dvh;
-            width: 750px;
-            color: rgb(255, 213, 25);
-            animation: fadeIn 0.2s ease forwards;
         }
 
     }
@@ -316,15 +306,20 @@
         }
 
         .projects-page__title {
-            font-size: 50px;
+            font-size: 44px;
             text-shadow: var(--text-shadow-welcome-page__heading);
-            /* margin: 40dvh 0 0 0; */
+            margin: 40dvh 0 0 0;
+        }
+
+        .projects-page__button--icon {
+            margin: 0 0 0 14px;
         }
 
         .projects-page__button-1,
         .projects-page__button {
             width: 220px;
             margin: 0 15px 0 0;
+            padding: 0 0 0 20px;
             font-size: 16px;
             transform: var(--transform-welcome-page__button--item);
             opacity: 100%;
@@ -347,9 +342,9 @@
 
     @media(min-width: 1250px) {
         .projects-page__item--list-item {
-
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
             scroll-snap-align: start;
         }
 
@@ -363,23 +358,6 @@
         .projects-page__title {
             font-size: 49px;
             text-shadow: var(--text-shadow-welcome-page__heading);
-
-        }
-
-        .projects-page__button {
-            margin: 0 20px 0 0;
-            padding: 0 30px 0 30px;
-            box-sizing: border-box;
-            border: none;
-            width: 215px;
-            height: 60px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            background: #000000;
-            box-shadow: 5px 5px 50px #00000065;
-            font-size: 15px;
-            color: #ffffff;
         }
 
         .projects-page__button-1:hover {
@@ -412,19 +390,23 @@
             opacity: 100%;
         }
 
-        .projects-page__title {
-            font-size: 51px;
-            text-shadow: var(--text-shadow-welcome-page__heading);
-        }
     }
 
+
+    @media(min-width: 1330px) {
+        .projects-page__title {
+            font-size: 44px;
+        }
+    }
 
     @media(min-width: 1500px) {
 
         .projects-page__item--list-item {
-            height: 170px;
+            width: 100%;
+            height: 100%;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
             scroll-snap-align: start;
         }
 
@@ -433,11 +415,6 @@
             display: flex;
             flex-direction: row;
             margin: 60px 0 0 0;
-        }
-
-        .projects-page__title {
-            font-size: 53px;
-            text-shadow: var(--text-shadow-welcome-page__heading);
         }
 
         .projects-page__button:hover {
