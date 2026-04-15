@@ -3,8 +3,14 @@ import { createRoot } from 'react-dom/client';
 import { Analytics } from "@vercel/analytics/react";
 import RouterRendering from './main.tsx';
 
-fetch('/app.src/ip').catch(() => {});
-
+fetch('/api/ip.ts')
+  .then(res => res.json())
+  .then(data => {
+    console.log('IP:', data);
+  })
+  .catch(err => {
+    console.log('ERROR:', err);
+  });
 const container = document.querySelector('.main');
 if (!container) throw new Error('Root element not found');
 
