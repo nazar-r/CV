@@ -11,6 +11,9 @@
   "dependencies": {
     "@tanstack/react-query": "4.35.0",
     "@tanstack/react-query-devtools": "4.35.0",
+    "@tsparticles/engine": "^3.9.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.9.1",
     "@vercel/analytics": "^2.0.1",
     "@vercel/node": "^5.7.6",
     "axios": "1.6.7",

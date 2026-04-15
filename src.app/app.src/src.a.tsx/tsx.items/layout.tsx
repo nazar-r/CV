@@ -1,41 +1,63 @@
-import { Outlet } from 'react-router-dom';
-import { useEffect } from "react";
+import { Outlet } from "react-router-dom";
+import Particles from "@tsparticles/react";
+import { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
+import type { Engine } from "@tsparticles/engine";
+import { useEffect, useState } from "react";
 
-export const useKeyboardOffset = () => {
-    useEffect(() => {
-        const vv = window.visualViewport;
-        if (!vv) return;
+function ParticleBackground() {
+  const [init, setInit] = useState(false);
 
-        const update = () => {
-            const keyboardHeight = Math.max(
-                0,
-                window.innerHeight - vv.height
-            );
+  useEffect(() => {
+    initParticlesEngine(async (engine: Engine) => {
+      await loadSlim(engine);
+    }).then(() => setInit(true));
+  }, []);
 
-            document.documentElement.style.setProperty(
-                "--keyboard-offset",
-                `${keyboardHeight}px`
-            );
-        };
+  if (!init) return null;
 
-        vv.addEventListener("resize", update);
-        vv.addEventListener("scroll", update);
+  return (
+    <div className="particles-layer">
+      <Particles
+        options={{
+          fullScreen: { enable: false }, // ⚠️ важливо
+          background: { color: "transparent" },
 
-        update();
+          particles: {
+            number: { value: 50 },
+            color: { value: "#ffffff" },
+            opacity: { value: 0.25 },
+            size: { value: { min: 1, max: 3 } },
+            move: { enable: true, speed: 0.6 },
+            links: {
+              enable: true,
+              color: "#ffffff",
+              opacity: 0.15,
+            },
+          },
 
-        return () => {
-            vv.removeEventListener("resize", update);
-            vv.removeEventListener("scroll", update);
-        };
-    }, []);
-};
+          interactivity: {
+            events: {
+              onHover: { enable: true, mode: "repulse" },
+            },
+            modes: {
+              repulse: { distance: 120 },
+            },
+          },
+        }}
+      />
+    </div>
+  );
+}
 
-const Layout = () => {
-    useKeyboardOffset()
+export default function Layout() {
+  return (
+    <>
+      <ParticleBackground />
 
-    return (<div className="main-container">
+      <div className="main-container">
         <Outlet />
-    </div>)
-};
-
-export default Layout;
+      </div>
+    </>
+  );
+}
