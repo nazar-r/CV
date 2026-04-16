@@ -39,7 +39,7 @@ const LobbyPageContent = () => {
                 <ul ref={listRef} className="menu-content__item--list">
                     <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                         <div>
-                            <div className="projects-page__item--list-item__heading">A WebSocket-based messenging app with end-to-end encryption from Libsodium</div>
+                            <div className="projects-page__item--list-item__heading">A WebSocket-based messaging app with end-to-end encryption from Libsodium</div>
                             <div className="projects-page__item--list-item__title--container">
                                 <div className="projects-page__item--list-item__title-2">
                                     <a href="https://amessage.site" className="projects-page__item--list-item__title-1">
