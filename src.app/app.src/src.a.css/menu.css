@@ -142,12 +142,8 @@
 }
 
 
-@media(min-height: 900px) {
-    .login-page__title {
-        margin: 40dvh 0 0 0;
-        font-size: 53px;
-        text-shadow: var(--text-shadow-welcome-page__heading);
-    }
+@media(min-height: 720px) {
+
 }
 
 @media (min-width: 1250px) {

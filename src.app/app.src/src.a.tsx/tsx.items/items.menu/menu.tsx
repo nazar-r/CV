@@ -9,7 +9,7 @@ export const Menu = () => {
     const [defMenu, setMenu] = useState(false);
     const [defMenuItems, setMenuItems] = useState<"chats" | "contacts" | "settings" | null>(null);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 1250);
-    const [isMobileHeight, setIsMobileHeight] = useState(window.innerHeight <= 850);
+    const [isMobileHeight, setIsMobileHeight] = useState(window.innerHeight <= 720);
 
     const switchMenu = () => setMenu(prev => !prev);
     const closeOrSwitchMenu = () => { defMenuItems ? setMenuItems(null) : setMenu(prev => !prev) };
@@ -40,9 +40,9 @@ export const Menu = () => {
     return (
         <>{defMenu && <div className="menu"><div className="menu-content">{menuContent}</div></div>}
             <div className="menu-container" style={{ bottom: defMenu ? (isMobile ? "23vh" : "15vh") : (isMobileHeight ? "7vh" : "9vh") }}>
-                {!isMobile ? <div className="menu-button" onClick={switchMenu} style={{ fontSize: defMenu ? 18 : 19 }}>Menu</div> : null}
+                {!isMobile ? <div className="menu-button" onClick={switchMenu} style={{ fontSize: defMenu ? 18: (isMobileHeight? 17 : 19) }}>Menu</div> : null}
                 {defMenu && (isMobile ? (!defMenuItems ? menuItems : null) : menuItems)}
-                {isMobile ? <div className="menu-button" onClick={closeOrSwitchMenu} style={{ fontSize: defMenu ? 18 : 19 }}>Menu</div> : null}
+                {isMobile ? <div className="menu-button" onClick={closeOrSwitchMenu} style={{ fontSize: defMenu ? 18 :(isMobileHeight? 17 : 19) }}>Menu</div> : null}
             </div> </>
     );
 }

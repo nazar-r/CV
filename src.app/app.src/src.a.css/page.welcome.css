@@ -9,7 +9,7 @@
 
 .welcome-page-container {
     text-shadow: var(--text-shadow-welcome-page__heading);
-    margin: 35dvh 0 0 0;
+    margin: 34dvh 0 0 0;
 }
 
 .welcome-page-container__title {
@@ -64,7 +64,7 @@
     }
 }
 
-@media(min-height: 700px) {
+@media(min-height: 720px) {
     .welcome-page-container__title {
         max-width: none;
     }
