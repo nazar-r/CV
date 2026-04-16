@@ -49,12 +49,6 @@
     cursor: pointer;
 }
 
-/* @media(min-height: 800px) { */
-    .welcome-page-container {
-        margin: 40dvh 0 0 0;
-    }
-/* } */
-
 @media(min-width: 650px) {
     .welcome-page-container__title {
         font-size: 50px;
@@ -66,9 +60,15 @@
     }
 }
 
-@media(min-width: 900px) {
+@media(min-height: 800px) {
     .welcome-page-container__title {
         max-width: none;
+    }
+
+    .projects-page__title,
+    .welcome-page-container {
+        margin: 40dvh 0 0 0;
+
     }
 }
 

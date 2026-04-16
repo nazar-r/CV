@@ -58,8 +58,8 @@ const LobbyPageContent = () => {
        
                             <div className="projects-page__item--list-item__heading">My Socials</div>
                             <div className="projects-page__item--list-item__title-2">
-                                <a href="https://t.me/nazar_rr" style={{ margin: "0 0 15px  0" }} className="projects-page__item--list-item__title-1">Telegram</a>
-                                <a href="https://www.linkedin.com/in/nazar-rozhalovsky-214082283" style={{ margin: "0 0 15px  0" }} className="projects-page__item--list-item__title-1">LinkedIn</a>
+                                <a href="https://t.me/nazar_rr" className="projects-page__item--list-item__title-1">Telegram</a>
+                                <a href="https://www.linkedin.com/in/nazar-rozhalovsky-214082283"  className="projects-page__item--list-item__title-1">LinkedIn</a>
                                 <a href="https://github.com/nazar-r/aNote" className="projects-page__item--list-item__title-1">Github</a>
                             </div>
 

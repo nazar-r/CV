@@ -23,7 +23,7 @@ body {
     width: 100dvw;
     height: 100dvh;
     position: relative;
-      z-index: 1;
+    z-index: 1;
 }
 
 .particles-layer canvas {
@@ -39,10 +39,8 @@ body {
     inset: 0;
     z-index: 0;
     pointer-events: none;
+    opacity: 50%;
 
-    /* трохи “преміум ефекту” */
-    opacity: 0.5;
-    filter: blur(0px);
 }
 
 input {
@@ -118,16 +116,16 @@ input:-webkit-autofill {
 }
 
 @media(min-width: 950px) {
-    
-.particles-layer {
 
-    opacity: 0.8;
+    .particles-layer {
 
-}
+        opacity: 0.8;
+
+    }
 
 
     body {
-          /* background: rgb(223, 187, 91); */
+        /* background: rgb(223, 187, 91); */
         padding: 0 18dvw 0 18dvw;
     }
 }
