@@ -50,7 +50,7 @@ const LobbyPageContent = () => {
                                     </a>
                                 </div>
 
-                                <a href="https://github.com/nazar-r/aMessage" className="projects-page__item--list-item__title-1">
+                                <a href="https://github.com/nazar-r/aMessage" style={{ margin: "0 0 0 0" }} className="projects-page__item--list-item__title-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" style={{ margin: "0 6px -2px 0" }} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
                                     </svg>
