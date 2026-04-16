@@ -279,14 +279,14 @@
         .projects-page__item--list-item__title-1 {
 
             margin: 0 22px 0 0;
-       
+
         }
 
 
         .projects-page__title {
             font-size: 36px;
             text-shadow: var(--text-shadow-welcome-page__heading);
-            margin: 35dvh 0 0 0;
+            margin: 37dvh 0 0 0;
         }
 
         .projects-page__item--list-item__title-2 {
@@ -296,7 +296,7 @@
         }
     }
 
-    @media(min-height: 800px) {
+    @media(min-height: 700px) {
 
         .projects-page__title {
             margin: 40dvh 0 0 0;

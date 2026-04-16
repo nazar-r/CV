@@ -58,9 +58,13 @@
         margin: var(--welcome-page-container__description-650);
         font-size: 16px;
     }
+
+    .welcome-page-container {
+        margin: 37dvh 0 0 0;
+    }
 }
 
-@media(min-height: 800px) {
+@media(min-height: 700px) {
     .welcome-page-container__title {
         max-width: none;
     }
