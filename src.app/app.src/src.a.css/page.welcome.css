@@ -17,6 +17,25 @@
     max-width: 500px;
 }
 
+.welcome-page__button-switch {
+    display: flex;
+    flex-direction: row;
+    margin: 23vh 0 0 0;
+}
+
+.welcome-page__button-switch--title {
+    margin: 0 20px 0 0;
+    font-size: 17px;
+    opacity: 75%;
+}
+
+.welcome-page__button-switch--title:hover {
+    opacity: 100%;
+    cursor: pointer;
+    transform: var(--transform-welcome-page__button--item);
+    text-shadow: 7px 7px 50px #000000bd;
+}
+
 .welcome-page-container__description {
     margin: var(--welcome-page-container__description);
     font-size: 15px;

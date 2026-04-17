@@ -3,8 +3,11 @@ import { ChatsList } from './menu.chats.list';
 import { ContactsList } from './menu.contacts.list';
 import { SettingsPage } from './menu.settings';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
+
 
 export const Menu = () => {
+    const { t } = useTranslation()
     const navigate = useNavigate();
     const [defMenu, setMenu] = useState(false);
     const [defMenuItems, setMenuItems] = useState<"chats" | "contacts" | "settings" | null>(null);
@@ -31,18 +34,18 @@ export const Menu = () => {
 
     const menuItems = (
         <>
-            <div className={`menu-container__item ${isMobile && defMenuItems ? "chat-message--fade" : ""}`} style={{ transitionDelay: isMobile && defMenuItems ? "0.2s" : "0s" }} onClick={() => navigate("/about")}>About Me</div>
-            <div className={`menu-container__item ${isMobile && defMenuItems ? "chat-message--fade" : ""}`} style={{ transitionDelay: isMobile && defMenuItems ? "0.2s" : "0s" }} onClick={() => navigate("/projects")}>Projects</div>
-            <div className={`menu-container__item ${isMobile && defMenuItems ? "chat-message--fade" : ""}`} style={{ transitionDelay: isMobile && defMenuItems ? "0.2s" : "0s" }} onClick={() => navigate("/contacts")}>Contacts</div>
+            <div className={`menu-container__item ${isMobile && defMenuItems ? "chat-message--fade" : ""}`} style={{ transitionDelay: isMobile && defMenuItems ? "0.2s" : "0s" }} onClick={() => navigate("/about")}>{t("menuTitle1")}</div>
+            <div className={`menu-container__item ${isMobile && defMenuItems ? "chat-message--fade" : ""}`} style={{ transitionDelay: isMobile && defMenuItems ? "0.2s" : "0s" }} onClick={() => navigate("/projects")}>{t("menuTitle2")}</div>
+            <div className={`menu-container__item ${isMobile && defMenuItems ? "chat-message--fade" : ""}`} style={{ transitionDelay: isMobile && defMenuItems ? "0.2s" : "0s" }} onClick={() => navigate("/contacts")}>{t("menuTitle3")}</div>
         </>
     );
 
     return (
         <>{defMenu && <div className="menu"><div className="menu-content">{menuContent}</div></div>}
             <div className="menu-container" style={{ bottom: defMenu ? (isMobile ? "23vh" : "15vh") : (isMobileHeight ? "7vh" : "9vh") }}>
-                {!isMobile ? <div className="menu-button" onClick={switchMenu} style={{ fontSize: defMenu ? 19: (isMobileHeight? 17 : 19) }}>Menu</div> : null}
+                {!isMobile ? <div className="menu-button" onClick={switchMenu} style={{ fontSize: defMenu ? 19 : (isMobileHeight ? 17 : 19) }}>{t("menu")}</div> : null}
                 {defMenu && (isMobile ? (!defMenuItems ? menuItems : null) : menuItems)}
-                {isMobile ? <div className="menu-button" onClick={closeOrSwitchMenu} style={{ fontSize: defMenu ? 19 :(isMobileHeight? 17 : 19) }}>Menu</div> : null}
+                {isMobile ? <div className="menu-button" onClick={closeOrSwitchMenu} style={{ fontSize: defMenu ? 19 : (isMobileHeight ? 17 : 19) }}>{t("menu")}</div> : null}
             </div> </>
     );
 }
