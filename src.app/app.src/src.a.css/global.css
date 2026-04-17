@@ -119,7 +119,7 @@ input:-webkit-autofill {
 
     .particles-layer {
 
-        opacity: 0.8;
+        opacity: 0.9;
 
     }
 
@@ -134,7 +134,7 @@ input:-webkit-autofill {
     body {
         padding: 0 25dvw 0 25dvw;
         /* background: rgb(223, 187, 91); */
-        /* background: linear-gradient(121.15deg, #00000000 -7%, #7230c780 100.31%), #131313; */
+        background: linear-gradient(121.15deg, #00000000 -7%, #7230c780 100.31%), #131313;
     }
 }
 

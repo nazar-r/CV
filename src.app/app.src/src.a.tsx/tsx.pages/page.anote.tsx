@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Screenshots } from '../tsx.items/screenshots-note';
 import { Menu } from '../tsx.items/items.menu/menu';
 
 const LobbyPageContent = () => {
@@ -48,6 +49,12 @@ const LobbyPageContent = () => {
                                     on Github
                                 </a>
                             </div>
+                        </div>
+                    </li>
+
+                    <li className="projects-page__item--list-item-2" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
+                        <div>
+                            <Screenshots />
                         </div>
                     </li>
 
