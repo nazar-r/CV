@@ -18,6 +18,11 @@
         fill: none;
     }
 
+    .projects-page__button-image {
+        cursor: pointer;
+
+    }
+
     .projects-page__button-container {
         display: flex;
         flex-direction: column;
