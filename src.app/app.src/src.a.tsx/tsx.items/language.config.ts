@@ -6,7 +6,7 @@ const savedLang = localStorage.getItem("lang") || "en";
 i18n
     .use(initReactI18next)
     .init({
-        fallbackLng: "en",
+        fallbackLng: "ua",
         lng: savedLang,
         supportedLngs: ["en", "ua"],
         interpolation: {
