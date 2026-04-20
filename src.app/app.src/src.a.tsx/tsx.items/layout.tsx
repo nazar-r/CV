@@ -26,7 +26,7 @@ function ParticleBackground() {
           particles: {
             number: { value: 50 },
             color: { value: "#ffffff" },
-            opacity: { value: 0.27 },
+            opacity: { value: 0.21 },
             size: { value: { min: 1, max: 3 } },
             move: { enable: true, speed: 0.6 },
             links: {
