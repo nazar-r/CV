@@ -1,7 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-const savedLang = localStorage.getItem("lang") || "en";
+const savedLang = localStorage.getItem("lang") || "ua";
 
 i18n
     .use(initReactI18next)
