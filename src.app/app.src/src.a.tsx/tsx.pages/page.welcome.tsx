@@ -26,7 +26,12 @@ const WelcomePageContent = () => {
         </svg>
       </div>
       <div className="menu-container">
-        <div className="welcome-page__button-switch--title"onClick={toggleLanguage}> {(i18n.language ?? "en").toUpperCase()}</div>
+        <div className="welcome-page__button-switch--title" onClick={toggleLanguage}> {(i18n.language ?? "en").toUpperCase()}
+          <svg viewBox="0 0 24 24" style={{ margin: "0 0 -5px 9px"}} className="projects-page__button--icon">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </div>
       </div>
     </div>
   );
