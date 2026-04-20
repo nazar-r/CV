@@ -23,7 +23,7 @@ export const RenderingButtons = () => {
         </svg>
       </div>
 
-      <div className="projects-page__button" onClick={() => { navigate("/certifications") }}>
+      <div  style={{ fontSize: "14.5px"}} className="projects-page__button" onClick={() => { navigate("/certifications") }}>
         <div className="projects-page__button--title-text">{t("projectsTitle3")}</div>
         <svg viewBox="0 0 24 24" className="projects-page__button--icon">
           <line x1="5" y1="12" x2="19" y2="12" />

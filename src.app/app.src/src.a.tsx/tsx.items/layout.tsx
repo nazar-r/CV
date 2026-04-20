@@ -20,13 +20,13 @@ function ParticleBackground() {
     <div className="particles-layer">
       <Particles
         options={{
-          fullScreen: { enable: false }, // ⚠️ важливо
+          fullScreen: { enable: false },
           background: { color: "transparent" },
 
           particles: {
             number: { value: 50 },
             color: { value: "#ffffff" },
-            opacity: { value: 0.25 },
+            opacity: { value: 0.27 },
             size: { value: { min: 1, max: 3 } },
             move: { enable: true, speed: 0.6 },
             links: {
@@ -54,7 +54,6 @@ export default function Layout() {
   return (
     <>
       <ParticleBackground />
-
       <div className="main-container">
         <Outlet />
       </div>

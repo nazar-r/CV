@@ -25,9 +25,9 @@ const WelcomePageContent = () => {
           <polyline points="12 5 19 12 12 19" />
         </svg>
       </div>
-      {/* <div className="welcome-page__button-switch">
+      <div className="menu-container">
         <div className="welcome-page__button-switch--title"onClick={toggleLanguage}> {(i18n.language ?? "en").toUpperCase()}</div>
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { Menu } from '../tsx.items/items.menu/menu';
+import { useTranslation } from "react-i18next";
 
 const LobbyPageContent = () => {
+    const { t } = useTranslation();
     const listRef = useRef<HTMLUListElement | null>(null);
     const [index, setIndex] = useState(0);
     const [paused, setPaused] = useState(false);
@@ -35,8 +37,8 @@ const LobbyPageContent = () => {
     return (
         <>
             <div className="projects-page">
-                <div className="projects-page__title">Interested?</div>
-                <div className="projects-page__title__heading">Then let's talk!</div>
+                <div className="projects-page__title">{t("contacts")}</div>
+                <div className="projects-page__title__heading">{t("contactsTitle1")}</div>
                 <ul ref={listRef} className="menu-content__item--list">
                     {/* <li className="projects-page__item--list-item-1" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                         <form id="contact-form" action="https://forminit.com/f/dmq045juc0x" method="POST" className="projects-page__item--list-item__field--container">
@@ -55,13 +57,13 @@ const LobbyPageContent = () => {
                     </li> */}
 
                     <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
-       
-                            <div className="projects-page__item--list-item__heading">My Socials</div>
-                            <div className="projects-page__item--list-item__title-2">
-                                <a href="https://t.me/nazar_rr" className="projects-page__item--list-item__title-1">Telegram</a>
-                                <a href="https://www.linkedin.com/in/nazar-rozhalovsky-214082283"  className="projects-page__item--list-item__title-1">LinkedIn</a>
-                                <a href="https://github.com/nazar-r/aNote" className="projects-page__item--list-item__title-1">Github</a>
-                            </div>
+
+                        <div className="projects-page__item--list-item__heading">{t("contactsTitle2")}</div>
+                        <div className="projects-page__item--list-item__title-2">
+                            <a href="https://t.me/nazar_rr" className="projects-page__item--list-item__title-1">Telegram</a>
+                            <a href="https://www.linkedin.com/in/nazar-rozhalovsky-214082283" className="projects-page__item--list-item__title-1">LinkedIn</a>
+                            <a href="https://github.com/nazar-r/aNote" className="projects-page__item--list-item__title-1">Github</a>
+                        </div>
 
                     </li>
 

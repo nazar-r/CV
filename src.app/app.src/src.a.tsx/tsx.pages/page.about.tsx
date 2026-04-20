@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { Menu } from '../tsx.items/items.menu/menu';
+import { useTranslation } from "react-i18next";
 
 const LobbyPageContent = () => {
+    const { t } = useTranslation();
     const listRef = useRef<HTMLUListElement | null>(null);
     const [index, setIndex] = useState(0);
     const [paused, setPaused] = useState(false);
@@ -34,86 +36,68 @@ const LobbyPageContent = () => {
 
     return (
         <div className="projects-page">
-            <div className="projects-page__title">My Journey</div>
+            <div className="projects-page__title">{t("about")}</div>
             <ul ref={listRef} className="menu-content__item--list">
                 <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                     <div>
-                        <div className="projects-page__item--list-item__heading">HI! i am nazar rozhalovsky</div>
-                        <div className="projects-page__item--list-item__title">
-                            Fullstack web developer with 2+ years of experience with REACT AND NODE.JS (NEST.JS)
-                        </div>
+                        <div className="projects-page__item--list-item__heading">{t("aboutTitle1")}</div>
+                        <div className="projects-page__item--list-item__title">{t("aboutDesc1")} </div>
                     </div>
                 </li>
 
                 <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                     <div>
-                        <div className="projects-page__item--list-item__heading">before</div>
-                        <div className="projects-page__item--list-item__title">
-                            My journey began at various it courses, where I discovered it through design and web projects. I learned the fundamentals of developing mockups, building small sites and web architecture.
-                        </div>
+                        <div className="projects-page__item--list-item__heading">{t("aboutTitle2")}</div>
+                        <div className="projects-page__item--list-item__title">{t("aboutDesc2")}</div>
                     </div>
                 </li>
 
                 <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                     <div>
-                        <div className="projects-page__item--list-item__heading">My apps - the aMessage</div>
-                        <div className="projects-page__item--list-item__title">
-                            Designed in 2026. A WebSocket-based messenger with end-to-end encryption from Libsodium. Allows you to chat securely. used google and github Authentication
-                        </div>
+                        <div className="projects-page__item--list-item__heading">{t("aboutTitle3")}</div>
+                        <div className="projects-page__item--list-item__title">{t("aboutDesc3")}</div>
                     </div>
                 </li>
 
                 <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                     <div>
-                        <div className="projects-page__item--list-item__heading">My apps - the Anote</div>
-                        <div className="projects-page__item--list-item__title">
-                            Designed in 2024. the first author's project. notes web application with crud based on react and nest.js. used google and github Authentication
-                        </div>
+                        <div className="projects-page__item--list-item__heading">{t("aboutTitle4")}</div>
+                        <div className="projects-page__item--list-item__title">{t("aboutDesc4")}</div>
                     </div>
                 </li>
 
                 <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                     <div>
-                        <div className="projects-page__item--list-item__heading">JS Development - SoftServe Academy</div>
-                        <div className="projects-page__item--list-item__title">
-                            In 2024 i Completed an intensive html (css) and JavaScript program at SoftServe Academy. participated in softserve team projects and developed apps.
-                        </div>
+                        <div className="projects-page__item--list-item__heading">{t("aboutTitle5")}</div>
+                        <div className="projects-page__item--list-item__title">{t("aboutDesc5")}</div>
                     </div>
                 </li>
 
                 <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                     <div>
-                        <div className="projects-page__item--list-item__heading">Node.js Development - personal experience</div>
-                        <div className="projects-page__item--list-item__title">
-                            in 2024 Development of my personal notes app based on React and Nest.js has begun
-                        </div>
+                        <div className="projects-page__item--list-item__heading">{t("aboutTitle6")}</div>
+                        <div className="projects-page__item--list-item__title">{t("aboutDesc6")}</div>
                     </div>
                 </li>
 
                 <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                     <div>
-                        <div className="projects-page__item--list-item__heading">devops AND databases - SoftServe Academy</div>
-                        <div className="projects-page__item--list-item__title">
-                            In 2024-2025 I completed a six-month team-based courses in DevOps and databases. I continued working on designs and personal projects.
-                        </div>
+                        <div className="projects-page__item--list-item__heading">{t("aboutTitle7")}</div>
+                        <div className="projects-page__item--list-item__title">{t("aboutDesc7")}</div>
                     </div>
                 </li>
 
                 <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                     <div>
-                        <div className="projects-page__item--list-item__heading">react sertificate - SoftServe Academy</div>
-                        <div className="projects-page__item--list-item__title">
-                            Having gained solid development experience, I continued working on certifications at SoftServe. In the summer of 2025, I received a softserve certificate of react developer
-                        </div>
+                        <div className="projects-page__item--list-item__heading">{t("aboutTitle8")}</div>
+                        <div className="projects-page__item--list-item__title">{t("aboutDesc8")}</div>
                     </div>
                 </li>
 
                 <li className="projects-page__item--list-item" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onClick={() => setPaused(true)}>
                     <div>
-                        <div className="projects-page__item--list-item__heading">keep moving!</div>
-                        <div className="projects-page__item--list-item__title">
-                            I continue to thoroughly explore and use new practices in web development. I am always ready to implement the latest and most innovative solutions.
-                        </div>
+                        <div className="projects-page__item--list-item__heading">{t("aboutTitle9")}</div>
+                        <div className="projects-page__item--list-item__title">{t("aboutDesc9")}</div>
                     </div>
                 </li>
 

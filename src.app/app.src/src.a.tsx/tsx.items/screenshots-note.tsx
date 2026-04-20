@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface ImageItem {
     src: string;
@@ -6,6 +7,7 @@ interface ImageItem {
 };
 
 export const Screenshots = () => {
+    const { t } = useTranslation();
     const images: ImageItem[] = [
         { src: "/Login-note.png", alt: "Page: Login" },
         { src: "/Note-prev.png", alt: "Page: Lobby Preview" },
@@ -25,7 +27,7 @@ export const Screenshots = () => {
 
     return (
         <>
-            <div className="projects-page__item--list-item__heading">Screenshots</div>
+            <div className="projects-page__item--list-item__heading">{t("screen")}</div>
 
             {selectedImage ? (
                 <div className={`projects-page__image-tab ${isClosing ? "fade" : ""}`}>
